@@ -240,7 +240,7 @@ class _FRecommendedListingProjectWidgetState
                                               alignment: AlignmentDirectional(
                                                   0.0, -1.0),
                                               child: Text(
-                                                displayListingListingRecord!
+                                                displayListingListingRecord
                                                     .region!,
                                                 style:
                                                     FlutterFlowTheme.of(context)
@@ -269,7 +269,7 @@ class _FRecommendedListingProjectWidgetState
                                                 builder: (context) =>
                                                     GSelectListingProjectWidget(
                                                   latlongToDisplay:
-                                                      displayListingListingRecord!
+                                                      displayListingListingRecord
                                                           .listingLocation
                                                           .latlong,
                                                 ),
