@@ -222,7 +222,7 @@ class _FRecommendedListingProjectWidgetState
                                               alignment: AlignmentDirectional(
                                                   0.0, 1.0),
                                               child: Text(
-                                                displayListingListingRecord!
+                                                displayListingListingRecord
                                                     .listingName!,
                                                 style:
                                                     FlutterFlowTheme.of(context)

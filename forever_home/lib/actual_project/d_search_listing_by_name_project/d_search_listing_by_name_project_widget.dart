@@ -6,7 +6,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:text_search/text_search.dart';
 import 'd_search_listing_by_name_project_model.dart';
@@ -360,7 +359,7 @@ class _DSearchListingByNameProjectWidgetState
                                               alignment: AlignmentDirectional(
                                                   0.0, 1.0),
                                               child: Text(
-                                                displayListingListingRecord!
+                                                displayListingListingRecord
                                                     .listingName!,
                                                 style:
                                                     FlutterFlowTheme.of(context)
@@ -378,7 +377,7 @@ class _DSearchListingByNameProjectWidgetState
                                               alignment: AlignmentDirectional(
                                                   0.0, -1.0),
                                               child: Text(
-                                                displayListingListingRecord!
+                                                displayListingListingRecord
                                                     .region!,
                                                 style:
                                                     FlutterFlowTheme.of(context)
@@ -409,7 +408,7 @@ class _DSearchListingByNameProjectWidgetState
                                                 builder: (context) =>
                                                     GSelectListingProjectWidget(
                                                   latlongToDisplay:
-                                                      displayListingListingRecord!
+                                                      displayListingListingRecord
                                                           .listingLocation
                                                           .latlong,
                                                 ),

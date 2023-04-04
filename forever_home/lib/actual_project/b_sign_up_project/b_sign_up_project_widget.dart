@@ -6,9 +6,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/custom_functions.dart' as functions;
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'b_sign_up_project_model.dart';
 export 'b_sign_up_project_model.dart';
@@ -516,7 +514,7 @@ class _BSignUpProjectWidgetState extends State<BSignUpProjectWidget> {
                                             _model.displayNameController.text,
                                         uid: functions
                                             .listingApplicationIncrement(
-                                                buttonResigsterInitialisationCounterRecord!
+                                                buttonResigsterInitialisationCounterRecord
                                                     .user!)
                                             .toString(),
                                         accountType: 'User',
@@ -539,7 +537,7 @@ class _BSignUpProjectWidgetState extends State<BSignUpProjectWidget> {
                                           FieldValue.increment(1),
                                       'User': FieldValue.increment(1),
                                     };
-                                    await buttonResigsterInitialisationCounterRecord!
+                                    await buttonResigsterInitialisationCounterRecord
                                         .reference
                                         .update(
                                             initialisationCounterUpdateData);
