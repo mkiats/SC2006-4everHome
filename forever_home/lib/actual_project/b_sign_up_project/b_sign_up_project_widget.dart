@@ -516,7 +516,7 @@ class _BSignUpProjectWidgetState extends State<BSignUpProjectWidget> {
                                             _model.displayNameController.text,
                                         uid: functions
                                             .listingApplicationIncrement(
-                                                buttonResigsterInitialisationCounterRecord!
+                                                buttonResigsterInitialisationCounterRecord
                                                     .user!)
                                             .toString(),
                                         accountType: 'User',
@@ -539,7 +539,7 @@ class _BSignUpProjectWidgetState extends State<BSignUpProjectWidget> {
                                           FieldValue.increment(1),
                                       'User': FieldValue.increment(1),
                                     };
-                                    await buttonResigsterInitialisationCounterRecord!
+                                    await buttonResigsterInitialisationCounterRecord
                                         .reference
                                         .update(
                                             initialisationCounterUpdateData);
