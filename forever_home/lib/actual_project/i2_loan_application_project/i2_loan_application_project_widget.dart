@@ -8,10 +8,8 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import '/flutter_flow/custom_functions.dart' as functions;
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'i2_loan_application_project_model.dart';
 export 'i2_loan_application_project_model.dart';
@@ -539,7 +537,7 @@ class _I2LoanApplicationProjectWidgetState
                                             loanID: _model.loanOutput!.id,
                                             id: functions
                                                 .listingApplicationIncrement(
-                                                    i2LoanApplicationProjectInitialisationCounterRecord!
+                                                    i2LoanApplicationProjectInitialisationCounterRecord
                                                         .loanApplication!),
                                             loanAgentID:
                                                 loanApplicationColumnLoanAgentRecord!
@@ -574,7 +572,7 @@ class _I2LoanApplicationProjectWidgetState
                                             'LoanApplication':
                                                 FieldValue.increment(1),
                                           };
-                                          await i2LoanApplicationProjectInitialisationCounterRecord!
+                                          await i2LoanApplicationProjectInitialisationCounterRecord
                                               .reference
                                               .update(
                                                   initialisationCounterUpdateData);
