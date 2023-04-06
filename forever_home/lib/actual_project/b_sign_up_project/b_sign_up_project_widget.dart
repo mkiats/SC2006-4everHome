@@ -299,7 +299,7 @@ class _BSignUpProjectWidgetState extends State<BSignUpProjectWidget> {
                               controller: _model.confirmPasswordController,
                               obscureText: !_model.confirmPasswordVisibility,
                               decoration: InputDecoration(
-                                labelText: 'ConfirmPassword',
+                                labelText: 'Confirm Password',
                                 labelStyle:
                                     FlutterFlowTheme.of(context).bodyMedium,
                                 hintText: 'Re-enter your password here...',
@@ -375,7 +375,7 @@ class _BSignUpProjectWidgetState extends State<BSignUpProjectWidget> {
                               controller: _model.displayNameController,
                               obscureText: false,
                               decoration: InputDecoration(
-                                labelText: 'DisplayName',
+                                labelText: 'Display Name',
                                 labelStyle:
                                     FlutterFlowTheme.of(context).bodyMedium,
                                 hintText: 'Enter your name here...',

@@ -1,4 +1,3 @@
-import '/actual_project/a_login_page_project/a_login_page_project_widget.dart';
 import '/actual_project/d_search_listing_by_name_project/d_search_listing_by_name_project_widget.dart';
 import '/actual_project/e_search_listing_by_filter_project/e_search_listing_by_filter_project_widget.dart';
 import '/auth/auth_util.dart';
@@ -251,38 +250,6 @@ class _CLandingPageProjectWidgetState extends State<CLandingPageProjectWidget> {
                               ),
                             ],
                           ),
-                        ),
-                      ),
-                      FFButtonWidget(
-                        onPressed: () async {
-                          await signOut();
-                          await Navigator.pushAndRemoveUntil(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => ALoginPageProjectWidget(),
-                            ),
-                            (r) => false,
-                          );
-                        },
-                        text: 'temp log out',
-                        options: FFButtonOptions(
-                          width: 130.0,
-                          height: 40.0,
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              0.0, 0.0, 0.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
-                              0.0, 0.0, 0.0, 0.0),
-                          color: FlutterFlowTheme.of(context).error,
-                          textStyle:
-                              FlutterFlowTheme.of(context).titleSmall.override(
-                                    fontFamily: 'Urbanist',
-                                    color: Colors.white,
-                                  ),
-                          borderSide: BorderSide(
-                            color: Colors.transparent,
-                            width: 1.0,
-                          ),
-                          borderRadius: BorderRadius.circular(8.0),
                         ),
                       ),
                     ],

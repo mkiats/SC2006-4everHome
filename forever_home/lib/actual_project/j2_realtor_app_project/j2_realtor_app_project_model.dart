@@ -30,7 +30,8 @@ class J2RealtorAppProjectModel extends FlutterFlowModel {
   // State field(s) for SearchField widget.
   TextEditingController? searchFieldController;
   String? Function(BuildContext, String?)? searchFieldControllerValidator;
-  List<RealtorAgentRecord> simpleSearchResults = [];
+  List<RealtorAgentRecord> simpleSearchResults1 = [];
+  List<RealtorAgentRecord> simpleSearchResults2 = [];
   // Stores action output result for [Bottom Sheet - realtorCard] action in Realtor widget.
   RealtorAgentRecord? realtorSelectedID;
   // Stores action output result for [Bottom Sheet - realtorCard] action in Realtor widget.

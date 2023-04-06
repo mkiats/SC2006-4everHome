@@ -755,10 +755,12 @@ class _LSummaryProjectWidgetState extends State<LSummaryProjectWidget> {
                           child: StreamBuilder<List<RealtorAgentRecord>>(
                             stream: queryRealtorAgentRecord(
                               queryBuilder: (realtorAgentRecord) =>
-                                  realtorAgentRecord.where('loginId',
-                                      isEqualTo:
-                                          lSummaryProjectListingApplicationRecord!
-                                              .realtorID),
+                                  realtorAgentRecord
+                                      .where('loginId',
+                                          isEqualTo:
+                                              lSummaryProjectListingApplicationRecord!
+                                                  .realtorID)
+                                      .where('loginId', isNotEqualTo: '0'),
                               singleRecord: true,
                             ),
                             builder: (context, snapshot) {
@@ -872,10 +874,12 @@ class _LSummaryProjectWidgetState extends State<LSummaryProjectWidget> {
                           child: StreamBuilder<List<InteriorDesignerRecord>>(
                             stream: queryInteriorDesignerRecord(
                               queryBuilder: (interiorDesignerRecord) =>
-                                  interiorDesignerRecord.where('loginId',
-                                      isEqualTo:
-                                          lSummaryProjectListingApplicationRecord!
-                                              .interiorDesignerID),
+                                  interiorDesignerRecord
+                                      .where('loginId',
+                                          isEqualTo:
+                                              lSummaryProjectListingApplicationRecord!
+                                                  .interiorDesignerID)
+                                      .where('loginId', isNotEqualTo: '0'),
                               singleRecord: true,
                             ),
                             builder: (context, snapshot) {

@@ -1,6 +1,6 @@
-import '/actual_project/h1_budget_estimate_project/h1_budget_estimate_project_widget.dart';
-import '/actual_project/h2_1_calculate_loan_project/h21_calculate_loan_project_widget.dart';
-import '/actual_project/h3_display_nearby_amenities_project/h3_display_nearby_amenities_project_widget.dart';
+import '/actual_project/h1_display_nearby_amenities_project/h1_display_nearby_amenities_project_widget.dart';
+import '/actual_project/h2_budget_estimate_project/h2_budget_estimate_project_widget.dart';
+import '/actual_project/h3_1_calculate_loan_project/h31_calculate_loan_project_widget.dart';
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -770,7 +770,55 @@ class _GSelectListingProjectWidgetState
                                               context,
                                               MaterialPageRoute(
                                                 builder: (context) =>
-                                                    H1BudgetEstimateProjectWidget(
+                                                    H1DisplayNearbyAmenitiesProjectWidget(
+                                                  latLongDisplayAmentites:
+                                                      widget.latlongToDisplay,
+                                                ),
+                                              ),
+                                            );
+                                          },
+                                          text: 'View Nearby Amenities',
+                                          options: FFButtonOptions(
+                                            width: double.infinity,
+                                            height: 40.0,
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 0.0, 0.0, 0.0),
+                                            iconPadding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 0.0, 0.0, 0.0),
+                                            color: FlutterFlowTheme.of(context)
+                                                .cultured,
+                                            textStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .titleSmall
+                                                    .override(
+                                                      fontFamily: 'Urbanist',
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .darkText,
+                                                    ),
+                                            elevation: 2.0,
+                                            borderSide: BorderSide(
+                                              color: Colors.transparent,
+                                              width: 1.0,
+                                            ),
+                                            borderRadius:
+                                                BorderRadius.circular(10.0),
+                                          ),
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            5.0, 5.0, 5.0, 5.0),
+                                        child: FFButtonWidget(
+                                          onPressed: () async {
+                                            await Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                builder: (context) =>
+                                                    H2BudgetEstimateProjectWidget(
                                                   listingToDisplay:
                                                       gSelectListingProjectListingRecord,
                                                 ),
@@ -818,7 +866,7 @@ class _GSelectListingProjectWidgetState
                                               context,
                                               MaterialPageRoute(
                                                 builder: (context) =>
-                                                    H21CalculateLoanProjectWidget(
+                                                    H31CalculateLoanProjectWidget(
                                                   selectedProperty:
                                                       gSelectListingProjectListingRecord,
                                                 ),
@@ -826,54 +874,6 @@ class _GSelectListingProjectWidgetState
                                             );
                                           },
                                           text: 'Calculate Mortgage',
-                                          options: FFButtonOptions(
-                                            width: double.infinity,
-                                            height: 40.0,
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 0.0, 0.0, 0.0),
-                                            iconPadding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 0.0, 0.0, 0.0),
-                                            color: FlutterFlowTheme.of(context)
-                                                .cultured,
-                                            textStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Urbanist',
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .darkText,
-                                                    ),
-                                            elevation: 2.0,
-                                            borderSide: BorderSide(
-                                              color: Colors.transparent,
-                                              width: 1.0,
-                                            ),
-                                            borderRadius:
-                                                BorderRadius.circular(10.0),
-                                          ),
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            5.0, 5.0, 5.0, 5.0),
-                                        child: FFButtonWidget(
-                                          onPressed: () async {
-                                            await Navigator.push(
-                                              context,
-                                              MaterialPageRoute(
-                                                builder: (context) =>
-                                                    H3DisplayNearbyAmenitiesProjectWidget(
-                                                  latLongDisplayAmentites:
-                                                      widget.latlongToDisplay,
-                                                ),
-                                              ),
-                                            );
-                                          },
-                                          text: 'View Nearby Amenities',
                                           options: FFButtonOptions(
                                             width: double.infinity,
                                             height: 40.0,

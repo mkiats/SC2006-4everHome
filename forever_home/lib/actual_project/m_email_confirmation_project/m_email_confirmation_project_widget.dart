@@ -932,6 +932,15 @@ class _MEmailConfirmationProjectWidgetState
                                                                         }
                                                                       }
 
+                                                                      await Navigator
+                                                                          .push(
+                                                                        context,
+                                                                        MaterialPageRoute(
+                                                                          builder: (context) =>
+                                                                              NEndPageProjectWidget(),
+                                                                        ),
+                                                                      );
+
                                                                       setState(
                                                                           () {});
                                                                     },

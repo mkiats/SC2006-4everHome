@@ -39,7 +39,9 @@ double calculateMonthlyInstallment(
   double noOfMonth = userTenure * 12;
   double partial_ans = (monthlyRate * math.pow((1 + monthlyRate), noOfMonth)) /
       (math.pow((1 + monthlyRate), noOfMonth) - 1);
-  return partial_ans * userLoanAmount;
+  double ans = partial_ans * userLoanAmount;
+  double result = (ans * 100).roundToDouble() / 100;
+  return result;
 }
 
 double calculateTotalInterest(
@@ -54,7 +56,8 @@ double calculateTotalInterest(
 
   double monthlyInstallment = partial_ans * userLoanAmount;
   double ans = (monthlyInstallment * noOfMonth) - userLoanAmount;
-  return ans;
+  double result = (ans * 100).roundToDouble() / 100;
+  return result;
 }
 
 double calculateTotalCost(
@@ -67,7 +70,9 @@ double calculateTotalCost(
   double noOfMonth = userTenure * 12;
   double partial_ans = (monthlyRate * math.pow((1 + monthlyRate), noOfMonth)) /
       (math.pow((1 + monthlyRate), noOfMonth) - 1);
-  return partial_ans * userLoanAmount * noOfMonth + userDownPayment;
+  double ans = partial_ans * userLoanAmount * noOfMonth + userDownPayment;
+  double result = (ans * 100).roundToDouble() / 100;
+  return result;
 }
 
 bool withinRange(

@@ -342,7 +342,7 @@ class _ESearchListingByFilterProjectWidgetState
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       10.0, 10.0, 10.0, 10.0),
                                   child: Text(
-                                    'MaxPrice (in \$SGD \'000))',
+                                    'MaxPrice (\$SGD)',
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
@@ -392,7 +392,7 @@ class _ESearchListingByFilterProjectWidgetState
                     ),
                     Padding(
                       padding: EdgeInsetsDirectional.fromSTEB(
-                          20.0, 20.0, 20.0, 20.0),
+                          60.0, 20.0, 60.0, 20.0),
                       child: Container(
                         width: double.infinity,
                         height: 50.0,
@@ -463,7 +463,7 @@ class _ESearchListingByFilterProjectWidgetState
                                   fontFamily: 'Urbanist',
                                   color:
                                       FlutterFlowTheme.of(context).primaryText,
-                                  fontSize: 30.0,
+                                  fontSize: 20.0,
                                   fontWeight: FontWeight.w500,
                                 ),
                             elevation: 2.0,
