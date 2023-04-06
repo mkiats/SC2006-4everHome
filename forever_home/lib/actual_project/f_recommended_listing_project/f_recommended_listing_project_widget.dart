@@ -339,7 +339,7 @@ class _FRecommendedListingProjectWidgetState
                             initialLocation:
                                 _model.recommendedListingGoogleMapsCenter ??=
                                     fRecommendedListingProjectListingRecordList
-                                        .first.listingLocation.latlong!,
+                                        .first.listingLocation.latlong,
                             markers: fRecommendedListingProjectListingRecordList
                                 .map((e) => e.listingLocation.latlong)
                                 .withoutNulls
