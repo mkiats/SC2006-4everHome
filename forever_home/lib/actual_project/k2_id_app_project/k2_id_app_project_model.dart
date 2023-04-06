@@ -30,8 +30,7 @@ class K2IdAppProjectModel extends FlutterFlowModel {
   // State field(s) for SearchField widget.
   TextEditingController? searchFieldController;
   String? Function(BuildContext, String?)? searchFieldControllerValidator;
-  List<InteriorDesignerRecord> simpleSearchResults1 = [];
-  List<InteriorDesignerRecord> simpleSearchResults2 = [];
+  List<InteriorDesignerRecord> simpleSearchResults = [];
   // Stores action output result for [Bottom Sheet - IDcard] action in ID widget.
   InteriorDesignerRecord? interiorDesignerSelectedID;
   // Stores action output result for [Bottom Sheet - IDcard] action in ID widget.

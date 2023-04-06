@@ -140,7 +140,7 @@ class _RealtorCardWidgetState extends State<RealtorCardWidget> {
                                     ),
                               ),
                               Text(
-                                'Years',
+                                ' Years',
                                 style: FlutterFlowTheme.of(context)
                                     .bodySmall
                                     .override(

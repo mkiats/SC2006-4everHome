@@ -507,7 +507,7 @@ class _I2LoanApplicationProjectWidgetState
                                         if (functions.withinRange(
                                             functions.textToDouble(_model
                                                 .mortgageTermController.text),
-                                            30.0,
+                                            31.0,
                                             5.0)) {
                                           // CreateLoan
 
@@ -593,7 +593,7 @@ class _I2LoanApplicationProjectWidgetState
                                                 title: Text(
                                                     'Mortgage Term is not within range'),
                                                 content: Text(
-                                                    'Mortgage term should be more than 5 and less than 30 years'),
+                                                    'Mortgage term should be between 5 to 30 years'),
                                                 actions: [
                                                   TextButton(
                                                     onPressed: () =>

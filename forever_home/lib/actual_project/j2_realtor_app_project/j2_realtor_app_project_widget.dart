@@ -195,6 +195,38 @@ class _J2RealtorAppProjectWidgetState extends State<J2RealtorAppProjectWidget>
                                       Duration(milliseconds: 1000),
                                       () => setState(() {}),
                                     ),
+                                    onFieldSubmitted: (_) async {
+                                      await queryRealtorAgentRecordOnce()
+                                          .then(
+                                            (records) => _model
+                                                    .simpleSearchResults1 =
+                                                TextSearch(
+                                              records
+                                                  .map(
+                                                    (record) => TextSearchItem(
+                                                        record, [
+                                                      record.phoneNumber!,
+                                                      record.emailAddress!,
+                                                      record.company!,
+                                                      record.name!
+                                                    ]),
+                                                  )
+                                                  .toList(),
+                                            )
+                                                    .search(_model
+                                                        .searchFieldController
+                                                        .text)
+                                                    .map((r) => r.object)
+                                                    .toList(),
+                                          )
+                                          .onError((_, __) =>
+                                              _model.simpleSearchResults1 = [])
+                                          .whenComplete(() => setState(() {}));
+
+                                      setState(() {
+                                        _model.realtorFullList = false;
+                                      });
+                                    },
                                     obscureText: false,
                                     decoration: InputDecoration(
                                       hintText: 'Search...',
@@ -264,8 +296,9 @@ class _J2RealtorAppProjectWidgetState extends State<J2RealtorAppProjectWidget>
                                   onTap: () async {
                                     await queryRealtorAgentRecordOnce()
                                         .then(
-                                          (records) => _model
-                                              .simpleSearchResults = TextSearch(
+                                          (records) =>
+                                              _model.simpleSearchResults2 =
+                                                  TextSearch(
                                             records
                                                 .map(
                                                   (record) => TextSearchItem(
@@ -278,13 +311,14 @@ class _J2RealtorAppProjectWidgetState extends State<J2RealtorAppProjectWidget>
                                                 )
                                                 .toList(),
                                           )
-                                              .search(_model
-                                                  .searchFieldController.text)
-                                              .map((r) => r.object)
-                                              .toList(),
+                                                      .search(_model
+                                                          .searchFieldController
+                                                          .text)
+                                                      .map((r) => r.object)
+                                                      .toList(),
                                         )
                                         .onError((_, __) =>
-                                            _model.simpleSearchResults = [])
+                                            _model.simpleSearchResults2 = [])
                                         .whenComplete(() => setState(() {}));
 
                                     setState(() {
@@ -408,7 +442,7 @@ class _J2RealtorAppProjectWidgetState extends State<J2RealtorAppProjectWidget>
                                                   )
                                                 ],
                                                 borderRadius:
-                                                    BorderRadius.circular(0.0),
+                                                    BorderRadius.circular(5.0),
                                                 border: Border.all(
                                                   color: realtorListRealtorAgentRecord
                                                               .loginId ==
@@ -431,25 +465,16 @@ class _J2RealtorAppProjectWidgetState extends State<J2RealtorAppProjectWidget>
                                                   crossAxisAlignment:
                                                       CrossAxisAlignment.center,
                                                   children: [
-                                                    InkWell(
-                                                      onTap: () async {
-                                                        setState(() {
-                                                          FFAppState()
-                                                                  .confirmRealtorAgent =
-                                                              false;
-                                                        });
-                                                      },
-                                                      child: ClipRRect(
-                                                        borderRadius:
-                                                            BorderRadius
-                                                                .circular(8.0),
-                                                        child: Image.network(
-                                                          realtorListRealtorAgentRecord
-                                                              .profilePhoto!,
-                                                          width: 70.0,
-                                                          height: 70.0,
-                                                          fit: BoxFit.cover,
-                                                        ),
+                                                    ClipRRect(
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              8.0),
+                                                      child: Image.network(
+                                                        realtorListRealtorAgentRecord
+                                                            .profilePhoto!,
+                                                        width: 70.0,
+                                                        height: 70.0,
+                                                        fit: BoxFit.cover,
                                                       ),
                                                     ),
                                                     Expanded(
@@ -603,7 +628,7 @@ class _J2RealtorAppProjectWidgetState extends State<J2RealtorAppProjectWidget>
                                 child: Builder(
                                   builder: (context) {
                                     final searchedRealtorList = _model
-                                        .simpleSearchResults
+                                        .simpleSearchResults2
                                         .where((e) => e.loginId != '0')
                                         .toList();
                                     return ListView.builder(
@@ -679,7 +704,7 @@ class _J2RealtorAppProjectWidgetState extends State<J2RealtorAppProjectWidget>
                                                   )
                                                 ],
                                                 borderRadius:
-                                                    BorderRadius.circular(0.0),
+                                                    BorderRadius.circular(5.0),
                                                 border: Border.all(
                                                   color: searchedRealtorListItem
                                                               .loginId ==
@@ -704,11 +729,7 @@ class _J2RealtorAppProjectWidgetState extends State<J2RealtorAppProjectWidget>
                                                   children: [
                                                     InkWell(
                                                       onTap: () async {
-                                                        setState(() {
-                                                          FFAppState()
-                                                                  .confirmRealtorAgent =
-                                                              false;
-                                                        });
+                                                        setState(() {});
                                                       },
                                                       child: ClipRRect(
                                                         borderRadius:
