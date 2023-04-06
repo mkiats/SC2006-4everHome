@@ -488,11 +488,11 @@ class _I2LoanApplicationProjectWidgetState
                                         : null;
                                 return FFButtonWidget(
                                   onPressed: () async {
-                                    if ((_model.loanAmountController.text !=
+                                    if ((_model.loanAmountController.text != // WARNING
                                                 null &&
                                             _model.loanAmountController.text !=
                                                 '') &&
-                                        (_model.mortgageTermController.text !=
+                                        (_model.mortgageTermController.text != // WARNING
                                                 null &&
                                             _model.mortgageTermController
                                                     .text !=
