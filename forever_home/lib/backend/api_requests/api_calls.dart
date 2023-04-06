@@ -3,11 +3,11 @@ import 'api_manager.dart';
 
 export 'api_manager.dart' show ApiCallResponse;
 
-const _kPrivateApiFunctionName = 'ffPrivateApiCall';
+const _kPrivateApiFunctionName = 'ffPrivateApiCall'; // WARNING
 
 class GooglePlaceNearbySearchCall {
   static Future<ApiCallResponse> call({
-    dynamic? locationJson,
+    dynamic? locationJson, // WARNING
   }) {
     final location = _serializeJson(locationJson);
 
@@ -62,33 +62,33 @@ class SendEmailCall {
     {
       "to": [
         {
-          "email": "${toEmail}"
+          "email": "$toEmail"
         }
       ],
-      "subject": "${subject}",
+      "subject": "$subject",
       "dynamic_template_data": {
-        "listingID": "${listingID}",
-        "name": "${name}",
-        "ListingName": "${listingName}",
-        "ListingAddress": "${addressName}",
-        "PostalCode": "${postalCode}",
-        "ListingType": "${listingType}",
-        "ListingFloor": "${listingFloorNumber}",
-        "ListingUnit": "${listingUnitNumber}",
-        "ListingDuration": ${leaseDuration},
-        "WaitingTime": ${waitingTime},
-        "LoanAgent": "${loanAgent}",
-        "LoanCompany": "${loanAgentCompany}",
-        "LoanAmount": "${loanAmount}",
-        "MortgageTerm": "${mortgageTerm}",
-        "RealtorAgent": "${realtorAgent}",
-        "RealtorCompany": "${realtorCompany}",
-        "InteriorDesigner": "${interiorAgent}",
-        "InteriorDesignerCompany": "${interiorCompany}",
-        "PropertyPrice": ${propertyPrice},
-        "OptionFees": ${optionFees},
-        "Tax": ${tax},
-        "Total": ${total}
+        "listingID": "$listingID",
+        "name": "$name",
+        "ListingName": "$listingName",
+        "ListingAddress": "$addressName",
+        "PostalCode": "$postalCode",
+        "ListingType": "$listingType",
+        "ListingFloor": "$listingFloorNumber",
+        "ListingUnit": "$listingUnitNumber",
+        "ListingDuration": $leaseDuration,
+        "WaitingTime": $waitingTime,
+        "LoanAgent": "$loanAgent",
+        "LoanCompany": "$loanAgentCompany",
+        "LoanAmount": "$loanAmount",
+        "MortgageTerm": "$mortgageTerm",
+        "RealtorAgent": "$realtorAgent",
+        "RealtorCompany": "$realtorCompany",
+        "InteriorDesigner": "$interiorAgent",
+        "InteriorDesignerCompany": "$interiorCompany",
+        "PropertyPrice": $propertyPrice,
+        "OptionFees": $optionFees,
+        "Tax": $tax,
+        "Total": $total
       }
     }
   ],
@@ -137,7 +137,7 @@ class ApiPagingParams {
       'PagingParams(nextPageNumber: $nextPageNumber, numItems: $numItems, lastResponse: $lastResponse,)';
 }
 
-String _serializeList(List? list) {
+String _serializeList(List? list) { // WARNING
   list ??= <String>[];
   try {
     return json.encode(list);
