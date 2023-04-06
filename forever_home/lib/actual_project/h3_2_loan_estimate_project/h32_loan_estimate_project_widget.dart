@@ -7,9 +7,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'h32_loan_estimate_project_model.dart';
 export 'h32_loan_estimate_project_model.dart';
@@ -114,7 +112,7 @@ class _H32LoanEstimateProjectWidgetState
                             List<ListingRecord>
                                 pageH22PropertyNameListingRecordList =
                                 snapshot.data!;
-                            final pageH22PropertyNameListingRecord =
+                            final pageH22PropertyNameListingRecord = // WARNING
                                 pageH22PropertyNameListingRecordList.isNotEmpty
                                     ? pageH22PropertyNameListingRecordList.first
                                     : null;
@@ -174,7 +172,7 @@ class _H32LoanEstimateProjectWidgetState
                               if (snapshot.data!.isEmpty) {
                                 return Container();
                               }
-                              final pageH22PropertyImageListingRecord =
+                              final pageH22PropertyImageListingRecord = // WARNING
                                   pageH22PropertyImageListingRecordList
                                           .isNotEmpty
                                       ? pageH22PropertyImageListingRecordList
@@ -230,7 +228,7 @@ class _H32LoanEstimateProjectWidgetState
                           if (snapshot.data!.isEmpty) {
                             return Container();
                           }
-                          final pageH22PropertyPriceListingRecord =
+                          final pageH22PropertyPriceListingRecord = // WARNING
                               pageH22PropertyPriceListingRecordList.isNotEmpty
                                   ? pageH22PropertyPriceListingRecordList.first
                                   : null;
@@ -282,7 +280,7 @@ class _H32LoanEstimateProjectWidgetState
                           if (snapshot.data!.isEmpty) {
                             return Container();
                           }
-                          final pageH22LoanAmountListingRecord =
+                          final pageH22LoanAmountListingRecord = // WARNING
                               pageH22LoanAmountListingRecordList.isNotEmpty
                                   ? pageH22LoanAmountListingRecordList.first
                                   : null;
@@ -334,7 +332,7 @@ class _H32LoanEstimateProjectWidgetState
                           if (snapshot.data!.isEmpty) {
                             return Container();
                           }
-                          final pageH22InterestRateListingRecord =
+                          final pageH22InterestRateListingRecord = // WARNING
                               pageH22InterestRateListingRecordList.isNotEmpty
                                   ? pageH22InterestRateListingRecordList.first
                                   : null;
@@ -385,7 +383,7 @@ class _H32LoanEstimateProjectWidgetState
                           if (snapshot.data!.isEmpty) {
                             return Container();
                           }
-                          final pageH22LoanTenureListingRecord =
+                          final pageH22LoanTenureListingRecord = // WARNING
                               pageH22LoanTenureListingRecordList.isNotEmpty
                                   ? pageH22LoanTenureListingRecordList.first
                                   : null;

@@ -7,7 +7,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'g_select_listing_project_model.dart';
 export 'g_select_listing_project_model.dart';
@@ -225,7 +224,7 @@ class _GSelectListingProjectWidgetState
                                                           AlignmentDirectional(
                                                               1.0, 0.0),
                                                       child: Text(
-                                                        gSelectListingProjectListingRecord!
+                                                        gSelectListingProjectListingRecord
                                                             .listingName!,
                                                         style:
                                                             FlutterFlowTheme.of(
@@ -283,7 +282,7 @@ class _GSelectListingProjectWidgetState
                                                           AlignmentDirectional(
                                                               1.0, 0.0),
                                                       child: Text(
-                                                        gSelectListingProjectListingRecord!
+                                                        gSelectListingProjectListingRecord
                                                             .listingLocation
                                                             .addressName!,
                                                         style:
@@ -335,7 +334,7 @@ class _GSelectListingProjectWidgetState
                                                           AlignmentDirectional(
                                                               1.0, 0.0),
                                                       child: Text(
-                                                        gSelectListingProjectListingRecord!
+                                                        gSelectListingProjectListingRecord
                                                             .region!,
                                                         style:
                                                             FlutterFlowTheme.of(
@@ -386,7 +385,7 @@ class _GSelectListingProjectWidgetState
                                                           AlignmentDirectional(
                                                               1.0, 0.0),
                                                       child: Text(
-                                                        gSelectListingProjectListingRecord!
+                                                        gSelectListingProjectListingRecord
                                                             .listingType!,
                                                         style:
                                                             FlutterFlowTheme.of(
@@ -437,7 +436,7 @@ class _GSelectListingProjectWidgetState
                                                           AlignmentDirectional(
                                                               1.0, 0.0),
                                                       child: Text(
-                                                        gSelectListingProjectListingRecord!
+                                                        gSelectListingProjectListingRecord
                                                             .listingFloorNumber!,
                                                         style:
                                                             FlutterFlowTheme.of(
@@ -488,7 +487,7 @@ class _GSelectListingProjectWidgetState
                                                           AlignmentDirectional(
                                                               1.0, 0.0),
                                                       child: Text(
-                                                        gSelectListingProjectListingRecord!
+                                                        gSelectListingProjectListingRecord
                                                             .listingUnitNumber!,
                                                         style:
                                                             FlutterFlowTheme.of(
@@ -539,7 +538,7 @@ class _GSelectListingProjectWidgetState
                                                           AlignmentDirectional(
                                                               1.0, 0.0),
                                                       child: Text(
-                                                        gSelectListingProjectListingRecord!
+                                                        gSelectListingProjectListingRecord
                                                             .leaseDuration!
                                                             .toString(),
                                                         style:
@@ -591,7 +590,7 @@ class _GSelectListingProjectWidgetState
                                                           AlignmentDirectional(
                                                               1.0, 0.0),
                                                       child: Text(
-                                                        gSelectListingProjectListingRecord!
+                                                        gSelectListingProjectListingRecord
                                                             .waitingTimeInMonths!
                                                             .toString(),
                                                         style:
@@ -643,7 +642,7 @@ class _GSelectListingProjectWidgetState
                                                           AlignmentDirectional(
                                                               1.0, 0.0),
                                                       child: Text(
-                                                        gSelectListingProjectListingRecord!
+                                                        gSelectListingProjectListingRecord
                                                             .propertyPrice!
                                                             .toString(),
                                                         style:
@@ -695,7 +694,7 @@ class _GSelectListingProjectWidgetState
                                                           AlignmentDirectional(
                                                               1.0, 0.0),
                                                       child: Text(
-                                                        gSelectListingProjectListingRecord!
+                                                        gSelectListingProjectListingRecord
                                                             .listingAvailble!
                                                             .toString(),
                                                         style:

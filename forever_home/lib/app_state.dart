@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'backend/backend.dart';
-import 'backend/api_requests/api_manager.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'flutter_flow/flutter_flow_util.dart';
 
@@ -28,24 +27,24 @@ class FFAppState extends ChangeNotifier {
   late SharedPreferences prefs;
 
   bool _confirmRealtorAgent = true;
-  bool get confirmRealtorAgent => _confirmRealtorAgent;
+  bool get confirmRealtorAgent => _confirmRealtorAgent; // WARNING
   set confirmRealtorAgent(bool _value) {
     _confirmRealtorAgent = _value;
   }
 
   bool _confirmIDAgent = true;
-  bool get confirmIDAgent => _confirmIDAgent;
+  bool get confirmIDAgent => _confirmIDAgent; // WARNING
   set confirmIDAgent(bool _value) {
     _confirmIDAgent = _value;
   }
 
   LatLng? _searchedListing = LatLng(1.3453021, 103.9469326);
-  LatLng? get searchedListing => _searchedListing;
+  LatLng? get searchedListing => _searchedListing; // WARNING
   set searchedListing(LatLng? _value) {
     _searchedListing = _value;
   }
 
-  LatLng? _DisplayAmenitiesListing = LatLng(1.3453021, 103.9469326);
+  LatLng? _DisplayAmenitiesListing = LatLng(1.3453021, 103.9469326); // WARNING
   LatLng? get DisplayAmenitiesListing => _DisplayAmenitiesListing;
   set DisplayAmenitiesListing(LatLng? _value) {
     _DisplayAmenitiesListing = _value;

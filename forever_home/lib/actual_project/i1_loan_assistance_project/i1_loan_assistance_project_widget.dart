@@ -6,9 +6,7 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'i1_loan_assistance_project_model.dart';
 export 'i1_loan_assistance_project_model.dart';
@@ -338,7 +336,7 @@ class _I1LoanAssistanceProjectWidgetState
                                                 List<LoanApplicationRecord>
                                                     noButtonLoanApplicationRecordList =
                                                     snapshot.data!;
-                                                final noButtonLoanApplicationRecord =
+                                                final noButtonLoanApplicationRecord = // WARNING
                                                     noButtonLoanApplicationRecordList
                                                             .isNotEmpty
                                                         ? noButtonLoanApplicationRecordList

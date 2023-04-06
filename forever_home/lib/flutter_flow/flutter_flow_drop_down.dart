@@ -2,7 +2,6 @@ import 'package:dropdown_button2/dropdown_button2.dart';
 
 import 'form_field_controller.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 
 class FlutterFlowDropDown<T> extends StatefulWidget {
   const FlutterFlowDropDown({

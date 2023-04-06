@@ -10,8 +10,6 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 import 'h31_calculate_loan_project_model.dart';
 export 'h31_calculate_loan_project_model.dart';
@@ -250,7 +248,7 @@ class _H31CalculateLoanProjectWidgetState
                                       '_model.pageH21UserDownPaymentInputController',
                                       Duration(milliseconds: 500),
                                       () async {
-                                        if (_model.pageH21UserDownPaymentInputController
+                                        if (_model.pageH21UserDownPaymentInputController // WARNING
                                                     .text ==
                                                 null ||
                                             _model.pageH21UserDownPaymentInputController

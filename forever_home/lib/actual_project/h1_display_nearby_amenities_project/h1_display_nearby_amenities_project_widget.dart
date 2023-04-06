@@ -5,9 +5,7 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'h1_display_nearby_amenities_project_model.dart';
 export 'h1_display_nearby_amenities_project_model.dart';
@@ -285,7 +283,7 @@ class _H1DisplayNearbyAmenitiesProjectWidgetState
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 24.0),
                                 child: Text(
-                                  h1DisplayNearbyAmenitiesProjectListingRecord!
+                                  h1DisplayNearbyAmenitiesProjectListingRecord
                                       .listingDescription!,
                                   style: FlutterFlowTheme.of(context)
                                       .bodySmall
