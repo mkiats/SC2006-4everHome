@@ -7,12 +7,9 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:text_search/text_search.dart';
 import 'k2_id_app_project_model.dart';
@@ -195,33 +192,6 @@ class _K2IdAppProjectWidgetState extends State<K2IdAppProjectWidget>
                                       () => setState(() {}),
                                     ),
                                     onFieldSubmitted: (_) async {
-                                      await queryInteriorDesignerRecordOnce()
-                                          .then(
-                                            (records) => _model
-                                                    .simpleSearchResults1 =
-                                                TextSearch(
-                                              records
-                                                  .map(
-                                                    (record) => TextSearchItem(
-                                                        record, [
-                                                      record.phoneNumber!,
-                                                      record.company!,
-                                                      record.emailAddress!,
-                                                      record.name!
-                                                    ]),
-                                                  )
-                                                  .toList(),
-                                            )
-                                                    .search(_model
-                                                        .searchFieldController
-                                                        .text)
-                                                    .map((r) => r.object)
-                                                    .toList(),
-                                          )
-                                          .onError((_, __) =>
-                                              _model.simpleSearchResults1 = [])
-                                          .whenComplete(() => setState(() {}));
-
                                       setState(() {
                                         _model.idFullList = false;
                                       });
@@ -295,9 +265,8 @@ class _K2IdAppProjectWidgetState extends State<K2IdAppProjectWidget>
                                   onTap: () async {
                                     await queryInteriorDesignerRecordOnce()
                                         .then(
-                                          (records) =>
-                                              _model.simpleSearchResults2 =
-                                                  TextSearch(
+                                          (records) => _model
+                                              .simpleSearchResults = TextSearch(
                                             records
                                                 .map(
                                                   (record) => TextSearchItem(
@@ -310,14 +279,13 @@ class _K2IdAppProjectWidgetState extends State<K2IdAppProjectWidget>
                                                 )
                                                 .toList(),
                                           )
-                                                      .search(_model
-                                                          .searchFieldController
-                                                          .text)
-                                                      .map((r) => r.object)
-                                                      .toList(),
+                                              .search(_model
+                                                  .searchFieldController.text)
+                                              .map((r) => r.object)
+                                              .toList(),
                                         )
                                         .onError((_, __) =>
-                                            _model.simpleSearchResults2 = [])
+                                            _model.simpleSearchResults = [])
                                         .whenComplete(() => setState(() {}));
 
                                     setState(() {
@@ -441,7 +409,19 @@ class _K2IdAppProjectWidgetState extends State<K2IdAppProjectWidget>
                                                   )
                                                 ],
                                                 borderRadius:
-                                                    BorderRadius.circular(0.0),
+                                                    BorderRadius.circular(5.0),
+                                                border: Border.all(
+                                                  color:
+                                                      iDListInteriorDesignerRecord
+                                                                  .loginId ==
+                                                              _model
+                                                                  .selectedIDAgent
+                                                          ? FlutterFlowTheme.of(
+                                                                  context)
+                                                              .success
+                                                          : Color(0x00000000),
+                                                  width: 2.0,
+                                                ),
                                               ),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
@@ -614,8 +594,10 @@ class _K2IdAppProjectWidgetState extends State<K2IdAppProjectWidget>
                                     0.0, 50.0, 0.0, 0.0),
                                 child: Builder(
                                   builder: (context) {
-                                    final searchedIDList =
-                                        _model.simpleSearchResults1.toList();
+                                    final searchedIDList = _model
+                                        .simpleSearchResults
+                                        .where((e) => e.loginId != '0')
+                                        .toList();
                                     return ListView.builder(
                                       padding: EdgeInsets.zero,
                                       shrinkWrap: true,
@@ -661,7 +643,8 @@ class _K2IdAppProjectWidgetState extends State<K2IdAppProjectWidget>
                                                   _model.interiorDesignerSelectedIDCopy =
                                                       value));
 
-                                              if (FFAppState().confirmIDAgent &&
+                                              if (!FFAppState()
+                                                      .confirmIDAgent &&
                                                   (searchedIDListItem.loginId ==
                                                       _model
                                                           .interiorDesignerSelectedIDCopy!
@@ -685,7 +668,17 @@ class _K2IdAppProjectWidgetState extends State<K2IdAppProjectWidget>
                                                   )
                                                 ],
                                                 borderRadius:
-                                                    BorderRadius.circular(0.0),
+                                                    BorderRadius.circular(5.0),
+                                                border: Border.all(
+                                                  color: searchedIDListItem
+                                                              .loginId ==
+                                                          _model.selectedIDAgent
+                                                      ? FlutterFlowTheme.of(
+                                                              context)
+                                                          .success
+                                                      : Color(0x00000000),
+                                                  width: 2.0,
+                                                ),
                                               ),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
@@ -934,7 +927,7 @@ class _K2IdAppProjectWidgetState extends State<K2IdAppProjectWidget>
                                 ),
                               );
                             },
-                            text: 'Confirm',
+                            text: 'Confirm ID',
                             options: FFButtonOptions(
                               width: 200.0,
                               height: 50.0,
@@ -949,7 +942,7 @@ class _K2IdAppProjectWidgetState extends State<K2IdAppProjectWidget>
                                     fontFamily: 'Urbanist',
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
-                                    fontSize: 25.0,
+                                    fontSize: 20.0,
                                   ),
                               elevation: 2.0,
                               borderSide: BorderSide(

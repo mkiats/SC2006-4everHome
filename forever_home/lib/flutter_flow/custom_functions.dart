@@ -1,15 +1,4 @@
-import 'dart:convert';
 import 'dart:math' as math;
-
-import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:intl/intl.dart';
-import 'package:timeago/timeago.dart' as timeago;
-import 'lat_lng.dart';
-import 'place.dart';
-import '../backend/backend.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import '../../auth/auth_util.dart';
 
 List<String> uniqueStr(List<String> curStr) {
   final uniqueStr = curStr.toSet().toList();
@@ -39,7 +28,9 @@ double calculateMonthlyInstallment(
   double noOfMonth = userTenure * 12;
   double partial_ans = (monthlyRate * math.pow((1 + monthlyRate), noOfMonth)) /
       (math.pow((1 + monthlyRate), noOfMonth) - 1);
-  return partial_ans * userLoanAmount;
+  double ans = partial_ans * userLoanAmount;
+  double result = (ans * 100).roundToDouble() / 100;
+  return result;
 }
 
 double calculateTotalInterest(
@@ -54,7 +45,8 @@ double calculateTotalInterest(
 
   double monthlyInstallment = partial_ans * userLoanAmount;
   double ans = (monthlyInstallment * noOfMonth) - userLoanAmount;
-  return ans;
+  double result = (ans * 100).roundToDouble() / 100;
+  return result;
 }
 
 double calculateTotalCost(
@@ -67,7 +59,9 @@ double calculateTotalCost(
   double noOfMonth = userTenure * 12;
   double partial_ans = (monthlyRate * math.pow((1 + monthlyRate), noOfMonth)) /
       (math.pow((1 + monthlyRate), noOfMonth) - 1);
-  return partial_ans * userLoanAmount * noOfMonth + userDownPayment;
+  double ans = partial_ans * userLoanAmount * noOfMonth + userDownPayment;
+  double result = (ans * 100).roundToDouble() / 100;
+  return result;
 }
 
 bool withinRange(

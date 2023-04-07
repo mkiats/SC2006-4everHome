@@ -8,10 +8,8 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import '/flutter_flow/custom_functions.dart' as functions;
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'i2_loan_application_project_model.dart';
 export 'i2_loan_application_project_model.dart';
@@ -490,11 +488,11 @@ class _I2LoanApplicationProjectWidgetState
                                         : null;
                                 return FFButtonWidget(
                                   onPressed: () async {
-                                    if ((_model.loanAmountController.text !=
+                                    if ((_model.loanAmountController.text != // WARNING
                                                 null &&
                                             _model.loanAmountController.text !=
                                                 '') &&
-                                        (_model.mortgageTermController.text !=
+                                        (_model.mortgageTermController.text != // WARNING
                                                 null &&
                                             _model.mortgageTermController
                                                     .text !=
@@ -507,7 +505,7 @@ class _I2LoanApplicationProjectWidgetState
                                         if (functions.withinRange(
                                             functions.textToDouble(_model
                                                 .mortgageTermController.text),
-                                            30.0,
+                                            31.0,
                                             5.0)) {
                                           // CreateLoan
 
@@ -539,7 +537,7 @@ class _I2LoanApplicationProjectWidgetState
                                             loanID: _model.loanOutput!.id,
                                             id: functions
                                                 .listingApplicationIncrement(
-                                                    i2LoanApplicationProjectInitialisationCounterRecord!
+                                                    i2LoanApplicationProjectInitialisationCounterRecord
                                                         .loanApplication!),
                                             loanAgentID:
                                                 loanApplicationColumnLoanAgentRecord!
@@ -574,7 +572,7 @@ class _I2LoanApplicationProjectWidgetState
                                             'LoanApplication':
                                                 FieldValue.increment(1),
                                           };
-                                          await i2LoanApplicationProjectInitialisationCounterRecord!
+                                          await i2LoanApplicationProjectInitialisationCounterRecord
                                               .reference
                                               .update(
                                                   initialisationCounterUpdateData);
@@ -593,7 +591,7 @@ class _I2LoanApplicationProjectWidgetState
                                                 title: Text(
                                                     'Mortgage Term is not within range'),
                                                 content: Text(
-                                                    'Mortgage term should be more than 5 and less than 30 years'),
+                                                    'Mortgage term should be between 5 to 30 years'),
                                                 actions: [
                                                   TextButton(
                                                     onPressed: () =>

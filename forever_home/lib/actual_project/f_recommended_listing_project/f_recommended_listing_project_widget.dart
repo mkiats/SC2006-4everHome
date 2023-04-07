@@ -7,7 +7,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'f_recommended_listing_project_model.dart';
 export 'f_recommended_listing_project_model.dart';
@@ -222,7 +221,7 @@ class _FRecommendedListingProjectWidgetState
                                               alignment: AlignmentDirectional(
                                                   0.0, 1.0),
                                               child: Text(
-                                                displayListingListingRecord!
+                                                displayListingListingRecord
                                                     .listingName!,
                                                 style:
                                                     FlutterFlowTheme.of(context)
@@ -240,7 +239,7 @@ class _FRecommendedListingProjectWidgetState
                                               alignment: AlignmentDirectional(
                                                   0.0, -1.0),
                                               child: Text(
-                                                displayListingListingRecord!
+                                                displayListingListingRecord
                                                     .region!,
                                                 style:
                                                     FlutterFlowTheme.of(context)
@@ -269,7 +268,7 @@ class _FRecommendedListingProjectWidgetState
                                                 builder: (context) =>
                                                     GSelectListingProjectWidget(
                                                   latlongToDisplay:
-                                                      displayListingListingRecord!
+                                                      displayListingListingRecord
                                                           .listingLocation
                                                           .latlong,
                                                 ),
@@ -340,7 +339,7 @@ class _FRecommendedListingProjectWidgetState
                             initialLocation:
                                 _model.recommendedListingGoogleMapsCenter ??=
                                     fRecommendedListingProjectListingRecordList
-                                        .first.listingLocation.latlong!,
+                                        .first.listingLocation.latlong,
                             markers: fRecommendedListingProjectListingRecordList
                                 .map((e) => e.listingLocation.latlong)
                                 .withoutNulls
