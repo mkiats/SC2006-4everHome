@@ -15,10 +15,10 @@
 
 ## Setup Instructions
 
-- Download VSCode
-- Within VS Code, download the dart and flutter extensions
-- Download [Android Studio](https://developer.android.com/studio/install) and android toolchain
-- Download flutterSdk 
+- Download [Visual Studio Code](https://code.visualstudio.com/download)
+- Download the Dart and Flutter VSCode extensions
+- Download [Android Studio](https://developer.android.com/studio/install) and [Android Toolchain](https://developer.android.com/ndk/downloads)
+- Download [Flutter SDK](https://docs.flutter.dev/release/archive)
 - Locate the path to bin folder and add path to environmental variable PATHS
 - Open forever_home folder in VS Code
 - Run 'flutter pub get'
@@ -26,7 +26,7 @@
 - Change directory to forever_home in VS Code terminal
 - Run 'flutter build apk --split-per-abi' in the VS Code terminal
 - Locate APK files under forever_home/build/app/outputs
-- Install APK into android test device
+- Install APK into android test devices
 
 Test device used:
 - OS:
@@ -37,10 +37,10 @@ Test device used:
 
 Project is created with:
 
-- Flutter
-- Firebase
-- Google Place API
-- SendGrid Email API
+- [Flutter](https://docs.flutter.dev/get-started/install)
+- [Firebase](https://firebase.google.com/)
+- [Google Place API](https://developers.google.com/maps/documentation/places/web-service)
+- [SendGrid Email API](https://sendgrid.com/solutions/email-api/)
 
 ## Contributors
 
