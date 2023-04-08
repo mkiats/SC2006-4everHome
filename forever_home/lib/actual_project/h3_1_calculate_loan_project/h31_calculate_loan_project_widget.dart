@@ -107,7 +107,7 @@ class _H31CalculateLoanProjectWidgetState
           children: [
             Container(
               width: double.infinity,
-              height: 760.0,
+              height: MediaQuery.of(context).size.height * 1.0,
               decoration: BoxDecoration(
                 color: FlutterFlowTheme.of(context).primary,
               ),
@@ -182,7 +182,7 @@ class _H31CalculateLoanProjectWidgetState
                                           widget.selectedProperty!.listingImg!,
                                       width: double.infinity,
                                       height: double.infinity,
-                                      fit: BoxFit.none,
+                                      fit: BoxFit.fitWidth,
                                     ),
                                   ),
                                 ),
@@ -227,388 +227,439 @@ class _H31CalculateLoanProjectWidgetState
                             color: FlutterFlowTheme.of(context).tertiary,
                           ),
                         ),
-                        child: Column(
-                          mainAxisSize: MainAxisSize.max,
-                          children: [
-                            Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  24.0, 10.0, 24.0, 10.0),
-                              child: Row(
-                                mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Expanded(
-                                    child: Text(
-                                      'Down Payment\n(S\$)',
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodySmall
-                                          .override(
-                                            fontFamily: 'Lexend Deca',
-                                            color: FlutterFlowTheme.of(context)
-                                                .dark600,
-                                            fontSize: 16.0,
-                                            fontWeight: FontWeight.normal,
-                                          ),
+                        child: SingleChildScrollView(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    24.0, 10.0, 24.0, 10.0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Expanded(
+                                      child: Text(
+                                        'Down Payment\n(S\$)',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodySmall
+                                            .override(
+                                              fontFamily: 'Lexend Deca',
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .dark600,
+                                              fontSize: 16.0,
+                                              fontWeight: FontWeight.normal,
+                                            ),
+                                      ),
                                     ),
-                                  ),
-                                  Expanded(
-                                    child: TextFormField(
-                                      controller: _model
-                                          .pageH21UserDownPaymentInputController,
-                                      onChanged: (_) => EasyDebounce.debounce(
-                                        '_model.pageH21UserDownPaymentInputController',
-                                        Duration(milliseconds: 500),
-                                        () async {
-                                          if (_model.pageH21UserDownPaymentInputController
-                                                      .text ==
-                                                  null ||
-                                              _model.pageH21UserDownPaymentInputController
-                                                      .text ==
-                                                  '') {
-                                            FFAppState().userLoanAmount = widget
-                                                .selectedProperty!
-                                                .propertyPrice!;
-                                            FFAppState().userDownPayment = 0.0;
-                                          } else {
-                                            if (FFAppState().userDownPayment >=
-                                                0.0) {
-                                              setState(() {
-                                                FFAppState().userLoanAmount =
-                                                    functions.calcuationLoanAmount(
-                                                        double.parse(_model
-                                                            .pageH21UserDownPaymentInputController
-                                                            .text),
-                                                        widget.selectedProperty!
-                                                            .propertyPrice!);
-                                                FFAppState().userDownPayment =
-                                                    double.parse(_model
-                                                        .pageH21UserDownPaymentInputController
-                                                        .text);
-                                              });
-                                            } else {
-                                              setState(() {
+                                    Expanded(
+                                      child: Container(
+                                        width: 100.0,
+                                        height: 60.0,
+                                        decoration: BoxDecoration(
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondaryBackground,
+                                        ),
+                                        child: TextFormField(
+                                          controller: _model
+                                              .pageH21UserDownPaymentInputController,
+                                          onChanged: (_) =>
+                                              EasyDebounce.debounce(
+                                            '_model.pageH21UserDownPaymentInputController',
+                                            Duration(milliseconds: 500),
+                                            () async {
+                                              if (_model.pageH21UserDownPaymentInputController
+                                                          .text ==
+                                                      null ||
+                                                  _model.pageH21UserDownPaymentInputController
+                                                          .text ==
+                                                      '') {
                                                 FFAppState().userLoanAmount =
                                                     widget.selectedProperty!
                                                         .propertyPrice!;
                                                 FFAppState().userDownPayment =
                                                     0.0;
-                                              });
-                                            }
-                                          }
-                                        },
-                                      ),
-                                      autofocus: true,
-                                      obscureText: false,
-                                      decoration: InputDecoration(
-                                        hintStyle: FlutterFlowTheme.of(context)
-                                            .bodyMedium,
-                                        enabledBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: Color(0xFF060606),
-                                            width: 1.0,
+                                              } else {
+                                                if (FFAppState()
+                                                        .userDownPayment >=
+                                                    0.0) {
+                                                  setState(() {
+                                                    FFAppState()
+                                                            .userLoanAmount =
+                                                        functions.calcuationLoanAmount(
+                                                            double.parse(_model
+                                                                .pageH21UserDownPaymentInputController
+                                                                .text),
+                                                            widget
+                                                                .selectedProperty!
+                                                                .propertyPrice!);
+                                                    FFAppState()
+                                                            .userDownPayment =
+                                                        double.parse(_model
+                                                            .pageH21UserDownPaymentInputController
+                                                            .text);
+                                                  });
+                                                } else {
+                                                  setState(() {
+                                                    FFAppState()
+                                                            .userLoanAmount =
+                                                        widget.selectedProperty!
+                                                            .propertyPrice!;
+                                                    FFAppState()
+                                                        .userDownPayment = 0.0;
+                                                  });
+                                                }
+                                              }
+                                            },
                                           ),
-                                          borderRadius:
-                                              BorderRadius.circular(10.0),
-                                        ),
-                                        focusedBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: Colors.black,
-                                            width: 1.0,
+                                          autofocus: true,
+                                          obscureText: false,
+                                          decoration: InputDecoration(
+                                            hintStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodyMedium,
+                                            enabledBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color: Color(0xFF060606),
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(10.0),
+                                            ),
+                                            focusedBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color: Colors.black,
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(10.0),
+                                            ),
+                                            errorBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color: Colors.black,
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(10.0),
+                                            ),
+                                            focusedErrorBorder:
+                                                OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color: Colors.black,
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(10.0),
+                                            ),
                                           ),
-                                          borderRadius:
-                                              BorderRadius.circular(10.0),
-                                        ),
-                                        errorBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: Colors.black,
-                                            width: 1.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(10.0),
-                                        ),
-                                        focusedErrorBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: Colors.black,
-                                            width: 1.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(10.0),
-                                        ),
-                                      ),
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodySmall
-                                          .override(
-                                            fontFamily: 'Urbanist',
-                                            fontSize: 20.0,
-                                          ),
-                                      textAlign: TextAlign.center,
-                                      maxLines: null,
-                                      keyboardType: TextInputType.number,
-                                      validator: _model
-                                          .pageH21UserDownPaymentInputControllerValidator
-                                          .asValidator(context),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  24.0, 10.0, 24.0, 10.0),
-                              child: Row(
-                                mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Expanded(
-                                    child: Text(
-                                      'Loan Amount\n(S\$)',
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodySmall
-                                          .override(
-                                            fontFamily: 'Lexend Deca',
-                                            color: FlutterFlowTheme.of(context)
-                                                .dark600,
-                                            fontSize: 16.0,
-                                            fontWeight: FontWeight.normal,
-                                          ),
-                                    ),
-                                  ),
-                                  Container(
-                                    width: 155.0,
-                                    height: 60.0,
-                                    decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
-                                          .secondaryBackground,
-                                      borderRadius: BorderRadius.circular(10.0),
-                                      border: Border.all(
-                                        color: Color(0xFF060606),
-                                      ),
-                                    ),
-                                    child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 20.0, 0.0, 0.0),
-                                      child: InkWell(
-                                        onTap: () async {
-                                          setState(() {
-                                            FFAppState().userLoanAmount =
-                                                FFAppState().userLoanAmount;
-                                          });
-                                        },
-                                        child: AutoSizeText(
-                                          functions
-                                              .calcuationLoanAmount(
-                                                  double.parse(_model
-                                                      .pageH21UserDownPaymentInputController
-                                                      .text),
-                                                  widget.selectedProperty!
-                                                      .propertyPrice!)
-                                              .toString(),
-                                          textAlign: TextAlign.center,
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyMedium
+                                              .bodySmall
                                               .override(
                                                 fontFamily: 'Urbanist',
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primaryText,
                                                 fontSize: 20.0,
                                               ),
+                                          textAlign: TextAlign.center,
+                                          maxLines: null,
+                                          keyboardType: TextInputType.number,
+                                          validator: _model
+                                              .pageH21UserDownPaymentInputControllerValidator
+                                              .asValidator(context),
                                         ),
                                       ),
                                     ),
-                                  ),
-                                ],
+                                  ],
+                                ),
                               ),
-                            ),
-                            Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  24.0, 10.0, 24.0, 10.0),
-                              child: Row(
-                                mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Expanded(
-                                    child: Text(
-                                      'Annual Interest Rate (%)',
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodySmall
-                                          .override(
-                                            fontFamily: 'Lexend Deca',
-                                            color: FlutterFlowTheme.of(context)
-                                                .dark600,
-                                            fontSize: 16.0,
-                                            fontWeight: FontWeight.normal,
-                                          ),
-                                    ),
-                                  ),
-                                  Expanded(
-                                    child: TextFormField(
-                                      controller: _model
-                                          .pageH21UserInterestInputController,
-                                      onChanged: (_) => EasyDebounce.debounce(
-                                        '_model.pageH21UserInterestInputController',
-                                        Duration(milliseconds: 2000),
-                                        () async {
-                                          FFAppState().userInterest =
-                                              double.parse(_model
-                                                  .pageH21UserInterestInputController
-                                                  .text);
-                                        },
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    24.0, 10.0, 24.0, 10.0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Expanded(
+                                      child: Text(
+                                        'Loan Amount\n(S\$)',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodySmall
+                                            .override(
+                                              fontFamily: 'Lexend Deca',
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .dark600,
+                                              fontSize: 16.0,
+                                              fontWeight: FontWeight.normal,
+                                            ),
                                       ),
-                                      autofocus: true,
-                                      obscureText: false,
-                                      decoration: InputDecoration(
-                                        hintStyle: FlutterFlowTheme.of(context)
-                                            .bodySmall,
-                                        enabledBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
+                                    ),
+                                    Expanded(
+                                      child: Container(
+                                        width: 100.0,
+                                        height: 60.0,
+                                        decoration: BoxDecoration(
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondaryBackground,
+                                          borderRadius:
+                                              BorderRadius.circular(10.0),
+                                          border: Border.all(
                                             color: Color(0xFF060606),
-                                            width: 1.0,
                                           ),
-                                          borderRadius:
-                                              BorderRadius.circular(10.0),
                                         ),
-                                        focusedBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: Colors.black,
-                                            width: 1.0,
+                                        child: Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 20.0, 0.0, 0.0),
+                                          child: InkWell(
+                                            onTap: () async {
+                                              setState(() {
+                                                FFAppState().userLoanAmount =
+                                                    FFAppState().userLoanAmount;
+                                              });
+                                            },
+                                            child: AutoSizeText(
+                                              functions
+                                                  .calcuationLoanAmount(
+                                                      double.parse(_model
+                                                          .pageH21UserDownPaymentInputController
+                                                          .text),
+                                                      widget.selectedProperty!
+                                                          .propertyPrice!)
+                                                  .toString(),
+                                              textAlign: TextAlign.center,
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Urbanist',
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primaryText,
+                                                        fontSize: 20.0,
+                                                      ),
+                                            ),
                                           ),
-                                          borderRadius:
-                                              BorderRadius.circular(10.0),
-                                        ),
-                                        errorBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: Colors.black,
-                                            width: 1.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(10.0),
-                                        ),
-                                        focusedErrorBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: Colors.black,
-                                            width: 1.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(10.0),
                                         ),
                                       ),
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodySmall
-                                          .override(
-                                            fontFamily: 'Urbanist',
-                                            fontSize: 20.0,
-                                          ),
-                                      textAlign: TextAlign.center,
-                                      maxLines: null,
-                                      keyboardType:
-                                          const TextInputType.numberWithOptions(
-                                              signed: true, decimal: true),
-                                      validator: _model
-                                          .pageH21UserInterestInputControllerValidator
-                                          .asValidator(context),
                                     ),
-                                  ),
-                                ],
+                                  ],
+                                ),
                               ),
-                            ),
-                            Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  24.0, 10.0, 24.0, 10.0),
-                              child: Row(
-                                mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Expanded(
-                                    child: Text(
-                                      'Loan Tenure\n(Years)',
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodySmall
-                                          .override(
-                                            fontFamily: 'Lexend Deca',
-                                            color: FlutterFlowTheme.of(context)
-                                                .dark600,
-                                            fontSize: 16.0,
-                                            fontWeight: FontWeight.normal,
-                                          ),
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    24.0, 10.0, 24.0, 10.0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Expanded(
+                                      child: Text(
+                                        'Annual Interest Rate (%)',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodySmall
+                                            .override(
+                                              fontFamily: 'Lexend Deca',
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .dark600,
+                                              fontSize: 16.0,
+                                              fontWeight: FontWeight.normal,
+                                            ),
+                                      ),
                                     ),
-                                  ),
-                                  Expanded(
-                                    child: TextFormField(
-                                      controller: _model
-                                          .pageH21UserTenureInputController,
-                                      onChanged: (_) => EasyDebounce.debounce(
-                                        '_model.pageH21UserTenureInputController',
-                                        Duration(milliseconds: 2000),
-                                        () async {
-                                          FFAppState().userLoanTenure =
-                                              double.parse(_model
-                                                  .pageH21UserTenureInputController
-                                                  .text);
-                                        },
-                                      ),
-                                      autofocus: true,
-                                      obscureText: false,
-                                      decoration: InputDecoration(
-                                        hintStyle: FlutterFlowTheme.of(context)
-                                            .bodySmall,
-                                        enabledBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: Color(0xFF060606),
-                                            width: 1.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(10.0),
+                                    Expanded(
+                                      child: Container(
+                                        width: 100.0,
+                                        height: 60.0,
+                                        decoration: BoxDecoration(
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondaryBackground,
                                         ),
-                                        focusedBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: Colors.black,
-                                            width: 1.0,
+                                        child: TextFormField(
+                                          controller: _model
+                                              .pageH21UserInterestInputController,
+                                          onChanged: (_) =>
+                                              EasyDebounce.debounce(
+                                            '_model.pageH21UserInterestInputController',
+                                            Duration(milliseconds: 2000),
+                                            () async {
+                                              FFAppState().userInterest =
+                                                  double.parse(_model
+                                                      .pageH21UserInterestInputController
+                                                      .text);
+                                            },
                                           ),
-                                          borderRadius:
-                                              BorderRadius.circular(10.0),
-                                        ),
-                                        errorBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: Colors.black,
-                                            width: 1.0,
+                                          autofocus: true,
+                                          obscureText: false,
+                                          decoration: InputDecoration(
+                                            hintStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodySmall,
+                                            enabledBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color: Color(0xFF060606),
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(10.0),
+                                            ),
+                                            focusedBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color: Colors.black,
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(10.0),
+                                            ),
+                                            errorBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color: Colors.black,
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(10.0),
+                                            ),
+                                            focusedErrorBorder:
+                                                OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color: Colors.black,
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(10.0),
+                                            ),
                                           ),
-                                          borderRadius:
-                                              BorderRadius.circular(10.0),
-                                        ),
-                                        focusedErrorBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: Colors.black,
-                                            width: 1.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(10.0),
-                                        ),
-                                      ),
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodySmall
-                                          .override(
-                                            fontFamily: 'Urbanist',
-                                            fontSize: 20.0,
-                                          ),
-                                      textAlign: TextAlign.center,
-                                      maxLines: null,
-                                      keyboardType:
-                                          const TextInputType.numberWithOptions(
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodySmall
+                                              .override(
+                                                fontFamily: 'Urbanist',
+                                                fontSize: 20.0,
+                                              ),
+                                          textAlign: TextAlign.center,
+                                          maxLines: null,
+                                          keyboardType: const TextInputType
+                                                  .numberWithOptions(
                                               signed: true, decimal: true),
-                                      validator: _model
-                                          .pageH21UserTenureInputControllerValidator
-                                          .asValidator(context),
+                                          validator: _model
+                                              .pageH21UserInterestInputControllerValidator
+                                              .asValidator(context),
+                                        ),
+                                      ),
                                     ),
-                                  ),
-                                ],
+                                  ],
+                                ),
                               ),
-                            ),
-                          ],
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    24.0, 10.0, 24.0, 10.0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Expanded(
+                                      child: Text(
+                                        'Loan Tenure\n(Years)',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodySmall
+                                            .override(
+                                              fontFamily: 'Lexend Deca',
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .dark600,
+                                              fontSize: 16.0,
+                                              fontWeight: FontWeight.normal,
+                                            ),
+                                      ),
+                                    ),
+                                    Expanded(
+                                      child: Container(
+                                        width: 100.0,
+                                        height: 60.0,
+                                        decoration: BoxDecoration(
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondaryBackground,
+                                        ),
+                                        child: TextFormField(
+                                          controller: _model
+                                              .pageH21UserTenureInputController,
+                                          onChanged: (_) =>
+                                              EasyDebounce.debounce(
+                                            '_model.pageH21UserTenureInputController',
+                                            Duration(milliseconds: 2000),
+                                            () async {
+                                              FFAppState().userLoanTenure =
+                                                  double.parse(_model
+                                                      .pageH21UserTenureInputController
+                                                      .text);
+                                            },
+                                          ),
+                                          autofocus: true,
+                                          obscureText: false,
+                                          decoration: InputDecoration(
+                                            hintStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodySmall,
+                                            enabledBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color: Color(0xFF060606),
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(10.0),
+                                            ),
+                                            focusedBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color: Colors.black,
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(10.0),
+                                            ),
+                                            errorBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color: Colors.black,
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(10.0),
+                                            ),
+                                            focusedErrorBorder:
+                                                OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color: Colors.black,
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(10.0),
+                                            ),
+                                          ),
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodySmall
+                                              .override(
+                                                fontFamily: 'Urbanist',
+                                                fontSize: 20.0,
+                                              ),
+                                          textAlign: TextAlign.center,
+                                          maxLines: null,
+                                          keyboardType: const TextInputType
+                                                  .numberWithOptions(
+                                              signed: true, decimal: true),
+                                          validator: _model
+                                              .pageH21UserTenureInputControllerValidator
+                                              .asValidator(context),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
