@@ -6,6 +6,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:text_search/text_search.dart';
 import 'd_search_listing_by_name_project_model.dart';
@@ -47,7 +48,7 @@ class _DSearchListingByNameProjectWidgetState
     return Scaffold(
       key: scaffoldKey,
       resizeToAvoidBottomInset: false,
-      backgroundColor: FlutterFlowTheme.of(context).primary,
+      backgroundColor: FlutterFlowTheme.of(context).secondary,
       appBar: PreferredSize(
         preferredSize:
             Size.fromHeight(MediaQuery.of(context).size.height * 0.07),
@@ -87,14 +88,14 @@ class _DSearchListingByNameProjectWidgetState
         children: [
           Container(
             width: double.infinity,
-            height: MediaQuery.of(context).size.height * 0.93,
+            height: MediaQuery.of(context).size.height * 0.83,
             decoration: BoxDecoration(
-              color: FlutterFlowTheme.of(context).primary,
+              color: FlutterFlowTheme.of(context).secondary,
             ),
             child: Align(
               alignment: AlignmentDirectional(0.0, 0.0),
               child: Column(
-                mainAxisSize: MainAxisSize.max,
+                mainAxisSize: MainAxisSize.min,
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Align(
@@ -213,28 +214,76 @@ class _DSearchListingByNameProjectWidgetState
                                       snapshot.data!;
                                   return FFButtonWidget(
                                     onPressed: () async {
-                                      setState(() {
-                                        _model.simpleSearchResults = TextSearch(
-                                          searchListingByNameButtonListingRecordList
-                                              .map(
-                                                (record) => TextSearchItem(
-                                                    record, [
-                                                  record.region!,
-                                                  record.listingName!
-                                                ]),
-                                              )
-                                              .toList(),
-                                        )
-                                            .search(_model
-                                                .searchNameTextBoxController
-                                                .text)
-                                            .map((r) => r.object)
-                                            .take(10)
-                                            .toList();
-                                      });
-                                      setState(() {
-                                        _model.searchListing = false;
-                                      });
+                                      if (_model.searchNameTextBoxController
+                                              .text !=
+                                          '') {
+                                        setState(() {
+                                          _model
+                                              .simpleSearchResults = TextSearch(
+                                            searchListingByNameButtonListingRecordList
+                                                .map(
+                                                  (record) => TextSearchItem(
+                                                      record, [
+                                                    record.region!,
+                                                    record.listingName!
+                                                  ]),
+                                                )
+                                                .toList(),
+                                          )
+                                              .search(_model
+                                                  .searchNameTextBoxController
+                                                  .text)
+                                              .map((r) => r.object)
+                                              .take(10)
+                                              .toList();
+                                        });
+                                        if (_model.simpleSearchResults.length !=
+                                            0) {
+                                          setState(() {
+                                            _model.searchListing = false;
+                                          });
+                                        } else {
+                                          await showDialog(
+                                            context: context,
+                                            builder: (alertDialogContext) {
+                                              return AlertDialog(
+                                                title: Text(
+                                                    'No listing available...'),
+                                                content: Text(
+                                                    'Listing does not exist, please modify your search or wait till more listings are added! Sorry for the inconvenience!'),
+                                                actions: [
+                                                  TextButton(
+                                                    onPressed: () =>
+                                                        Navigator.pop(
+                                                            alertDialogContext),
+                                                    child: Text('Ok'),
+                                                  ),
+                                                ],
+                                              );
+                                            },
+                                          );
+                                        }
+                                      } else {
+                                        await showDialog(
+                                          context: context,
+                                          builder: (alertDialogContext) {
+                                            return AlertDialog(
+                                              title: Text(
+                                                  'Empty search field detected....'),
+                                              content: Text(
+                                                  'Please fill up the search field!'),
+                                              actions: [
+                                                TextButton(
+                                                  onPressed: () =>
+                                                      Navigator.pop(
+                                                          alertDialogContext),
+                                                  child: Text('Ok'),
+                                                ),
+                                              ],
+                                            );
+                                          },
+                                        );
+                                      }
                                     },
                                     text: 'Search',
                                     options: FFButtonOptions(
@@ -359,7 +408,7 @@ class _DSearchListingByNameProjectWidgetState
                                               alignment: AlignmentDirectional(
                                                   0.0, 1.0),
                                               child: Text(
-                                                displayListingListingRecord
+                                                displayListingListingRecord!
                                                     .listingName!,
                                                 style:
                                                     FlutterFlowTheme.of(context)
@@ -377,7 +426,7 @@ class _DSearchListingByNameProjectWidgetState
                                               alignment: AlignmentDirectional(
                                                   0.0, -1.0),
                                               child: Text(
-                                                displayListingListingRecord
+                                                displayListingListingRecord!
                                                     .region!,
                                                 style:
                                                     FlutterFlowTheme.of(context)
@@ -408,7 +457,7 @@ class _DSearchListingByNameProjectWidgetState
                                                 builder: (context) =>
                                                     GSelectListingProjectWidget(
                                                   latlongToDisplay:
-                                                      displayListingListingRecord
+                                                      displayListingListingRecord!
                                                           .listingLocation
                                                           .latlong,
                                                 ),

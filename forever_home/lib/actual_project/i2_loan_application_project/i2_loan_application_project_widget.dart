@@ -8,8 +8,10 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import '/flutter_flow/custom_functions.dart' as functions;
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'i2_loan_application_project_model.dart';
 export 'i2_loan_application_project_model.dart';
@@ -79,30 +81,34 @@ class _I2LoanApplicationProjectWidgetState
         return Scaffold(
           key: scaffoldKey,
           backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
-          appBar: AppBar(
-            backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
-            automaticallyImplyLeading: false,
-            leading: FlutterFlowIconButton(
-              borderColor: Colors.transparent,
-              borderRadius: 30.0,
-              borderWidth: 1.0,
-              buttonSize: 60.0,
-              icon: Icon(
-                Icons.arrow_back_rounded,
-                color: FlutterFlowTheme.of(context).primaryText,
-                size: 30.0,
+          appBar: PreferredSize(
+            preferredSize:
+                Size.fromHeight(MediaQuery.of(context).size.height * 0.07),
+            child: AppBar(
+              backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+              automaticallyImplyLeading: false,
+              leading: FlutterFlowIconButton(
+                borderColor: Colors.transparent,
+                borderRadius: 30.0,
+                borderWidth: 1.0,
+                buttonSize: 60.0,
+                icon: Icon(
+                  Icons.arrow_back_rounded,
+                  color: FlutterFlowTheme.of(context).primaryText,
+                  size: 30.0,
+                ),
+                onPressed: () async {
+                  Navigator.pop(context);
+                },
               ),
-              onPressed: () async {
-                Navigator.pop(context);
-              },
+              title: Text(
+                'Loan Application',
+                style: FlutterFlowTheme.of(context).headlineSmall,
+              ),
+              actions: [],
+              centerTitle: true,
+              elevation: 2.0,
             ),
-            title: Text(
-              'Loan Application',
-              style: FlutterFlowTheme.of(context).headlineSmall,
-            ),
-            actions: [],
-            centerTitle: true,
-            elevation: 2.0,
           ),
           body: SafeArea(
             child: StreamBuilder<List<LoanAgentRecord>>(
@@ -488,11 +494,11 @@ class _I2LoanApplicationProjectWidgetState
                                         : null;
                                 return FFButtonWidget(
                                   onPressed: () async {
-                                    if ((_model.loanAmountController.text != // WARNING
+                                    if ((_model.loanAmountController.text !=
                                                 null &&
                                             _model.loanAmountController.text !=
                                                 '') &&
-                                        (_model.mortgageTermController.text != // WARNING
+                                        (_model.mortgageTermController.text !=
                                                 null &&
                                             _model.mortgageTermController
                                                     .text !=
@@ -537,7 +543,7 @@ class _I2LoanApplicationProjectWidgetState
                                             loanID: _model.loanOutput!.id,
                                             id: functions
                                                 .listingApplicationIncrement(
-                                                    i2LoanApplicationProjectInitialisationCounterRecord
+                                                    i2LoanApplicationProjectInitialisationCounterRecord!
                                                         .loanApplication!),
                                             loanAgentID:
                                                 loanApplicationColumnLoanAgentRecord!
@@ -572,7 +578,7 @@ class _I2LoanApplicationProjectWidgetState
                                             'LoanApplication':
                                                 FieldValue.increment(1),
                                           };
-                                          await i2LoanApplicationProjectInitialisationCounterRecord
+                                          await i2LoanApplicationProjectInitialisationCounterRecord!
                                               .reference
                                               .update(
                                                   initialisationCounterUpdateData);

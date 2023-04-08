@@ -5,7 +5,9 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'h1_display_nearby_amenities_project_model.dart';
 export 'h1_display_nearby_amenities_project_model.dart';
@@ -148,35 +150,44 @@ class _H1DisplayNearbyAmenitiesProjectWidgetState
           key: scaffoldKey,
           resizeToAvoidBottomInset: false,
           backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
-          appBar: AppBar(
-            backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
-            automaticallyImplyLeading: false,
-            leading: FlutterFlowIconButton(
-              borderColor: Colors.transparent,
-              borderRadius: 30.0,
-              borderWidth: 1.0,
-              buttonSize: 60.0,
-              icon: Icon(
-                Icons.arrow_back_rounded,
-                color: FlutterFlowTheme.of(context).primaryText,
-                size: 30.0,
+          appBar: PreferredSize(
+            preferredSize:
+                Size.fromHeight(MediaQuery.of(context).size.height * 0.07),
+            child: AppBar(
+              backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+              automaticallyImplyLeading: false,
+              leading: FlutterFlowIconButton(
+                borderColor: Colors.transparent,
+                borderRadius: 30.0,
+                borderWidth: 1.0,
+                buttonSize: 60.0,
+                icon: Icon(
+                  Icons.arrow_back_rounded,
+                  color: FlutterFlowTheme.of(context).primaryText,
+                  size: 30.0,
+                ),
+                onPressed: () async {
+                  Navigator.pop(context);
+                },
               ),
-              onPressed: () async {
-                Navigator.pop(context);
-              },
+              title: Text(
+                'Nearby Amenities',
+                style: FlutterFlowTheme.of(context).headlineSmall,
+              ),
+              actions: [],
+              centerTitle: true,
+              elevation: 2.0,
             ),
-            title: Text(
-              'Nearby Amenities',
-              style: FlutterFlowTheme.of(context).headlineSmall,
-            ),
-            actions: [],
-            centerTitle: true,
-            elevation: 2.0,
           ),
           body: Column(
             mainAxisSize: MainAxisSize.max,
             children: [
-              Expanded(
+              Container(
+                width: double.infinity,
+                height: MediaQuery.of(context).size.height * 0.83,
+                decoration: BoxDecoration(
+                  color: FlutterFlowTheme.of(context).secondaryBackground,
+                ),
                 child: SingleChildScrollView(
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
@@ -283,7 +294,7 @@ class _H1DisplayNearbyAmenitiesProjectWidgetState
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 24.0),
                                 child: Text(
-                                  h1DisplayNearbyAmenitiesProjectListingRecord
+                                  h1DisplayNearbyAmenitiesProjectListingRecord!
                                       .listingDescription!,
                                   style: FlutterFlowTheme.of(context)
                                       .bodySmall
