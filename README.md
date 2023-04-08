@@ -12,11 +12,9 @@ SC2006 Software Engineering Project
 
 </p>
 
-
 <p align="center">
-![app flow](https://user-images.githubusercontent.com/77598625/229779826-5a7a40be-6bef-451c-9348-327a1d9d5475.png)
+  <img width="460" height="300" src=![app flow](https://user-images.githubusercontent.com/77598625/229779826-5a7a40be-6bef-451c-9348-327a1d9d5475.png)>
 </p>
-
 
 
 ## Setup Instructions
