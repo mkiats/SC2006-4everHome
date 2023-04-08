@@ -11,7 +11,7 @@ SC2006 Software Engineering Project
 4EverHome connects users to external agents such as realtors and interior designers, which are often difficult and time-consuming to source. Through the usage of this app, users can choose which services they can engage with during the purchase of their property.
 
 
-## Technologies[![](#technologies)
+## Technologies
 
 Project is created with:
 
@@ -20,7 +20,7 @@ Project is created with:
 - Google Place API
 - SendGrid API
 
-## Contributors[![](#contributors)
+## Contributors
 
 | Profile                                                                                                                                           | Name             | School                                 |
 | ------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | -------------------------------------- |
