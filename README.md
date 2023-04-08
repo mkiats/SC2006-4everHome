@@ -7,7 +7,7 @@ SC2006 Software Engineering Project
   4EverHome is a mobile application which seeks to assist users in the purchase of properties in Singapore. The mobile app aims to seamlessly bridge the gap between different parties such as consumers, realtors, financial institutions and interior designers to facilitate the purchase of a property.
   
   <p align="center">
-    <img width="900" height="500" src='https://user-images.githubusercontent.com/77598625/229779826-5a7a40be-6bef-451c-9348-327a1d9d5475.png'>
+    <img width="700" height="400" src='https://user-images.githubusercontent.com/77598625/229779826-5a7a40be-6bef-451c-9348-327a1d9d5475.png'>
   </p>
 
   4EverHome's functions can be broadly categorised into 2 main purposes.
