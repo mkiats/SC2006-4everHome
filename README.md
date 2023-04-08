@@ -17,8 +17,8 @@ Project is created with:
 
 - Flutter
 - Firebase
-- Google Place API
-- SendGrid API
+- Google Place API   (https://developers.google.com/maps/documentation/places/web-service)
+- SendGrid Email API (https://sendgrid.com/solutions/email-api/)
 
 ## Contributors
 
