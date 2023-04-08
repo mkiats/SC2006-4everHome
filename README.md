@@ -16,7 +16,7 @@
 ## Setup Instructions
 
 - Download VSCode, ensure dart and flutter extensions are downloaded
-- Download android studio and android toolchain
+-- Download android studio and android toolchain
 - Download flutterSdk and add to variable environmental paths
 - Run the flutter code and load 'flutter build apk --release'
 - Install apk into test device
