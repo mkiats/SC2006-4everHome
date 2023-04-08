@@ -1,6 +1,6 @@
 # 4everHome
 
-# SC2006 Software Engineering Project
+## SC2006 Software Engineering Project
 
 ## Project Description
 
@@ -15,9 +15,9 @@
 
 ## Setup Instructions
 
-- Download VSCode, 
+- Download VSCode
 - Within VS Code, download the dart and flutter extensions
-- Download android studio and android toolchain
+- Download [Android Studio](https://developer.android.com/studio/install) and android toolchain
 - Download flutterSdk 
 - Locate the path to bin folder and add path to environmental variable PATHS
 - Open forever_home folder in VS Code
