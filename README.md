@@ -20,9 +20,13 @@
 - Download android studio and android toolchain
 - Download flutterSdk 
 - Locate the path to bin folder and add path to environmental variable PATHS
-- Run 'flutter build apk --release' in the terminal (VS Code)
-- Install apk into test device
-
+- Open forever_home folder in VS Code
+- Run 'flutter pub get'
+- Run 'flutter packages pub run build_runner build --delete-conflicting-outputs' on VS Code terminal
+- Change directory to forever_home in VS Code terminal
+- Run 'flutter build apk --split-per-abi' in the VS Code terminal
+- Locate APK files under forever_home/build/app/outputs
+- Install APK into android test device
 
 Test device used:
 - OS:
