@@ -12,7 +12,7 @@ SC2006 Software Engineering Project
 
   4EverHome's functions can be broadly categorised into 2 main purposes.
   4EverHome aids users in finding their ideal home by taking into account factors such as types of residence, price range, and preferred location. Users can view suggested properties based on their preferences and make their decision to purchase the property.
-  4EverHome connects users to external agents such as loana agents, realtors and interior designers, which are often difficult and time-consuming to source. Through the usage of this app, users can choose which services they can engage with during the purchase of their property. 4everHome aims to bring convenience to the users and provide a seamless user experience for them.
+  4EverHome connects users to external agents such as loana agents, realtors and interior designers, which are often difficult and time-consuming to source. Through the usage of this app, users can choose which services they can engage with during the purchase of their property. 4everHome aims to bring convenience for the users and provide seamless user experiences for them.
 </p>
 
 
