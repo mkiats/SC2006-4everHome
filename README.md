@@ -1,6 +1,4 @@
-# 4everHome
-
-## SC2006 Software Engineering Project
+# 4everHome SC2006 Software Engineering Project
 
 ## Project Description
 
