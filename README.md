@@ -25,5 +25,5 @@ Project is created with:
 | Profile                                                                                                                                           | Name             | School                                 |
 | ------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | -------------------------------------- |
 | <a href='https://github.com/jklye' title='jklye'> <img src='https://github.com/jklye.png' height='50' width='50'/></a> | Lye Jin Kai       | Nanyang Technological University (NTU) |
-| <a href='https://github.com/kiatCodes' title='kiatCodes'> <img src='https://github.com/kiatCodes.png' height='50' width='50'/></a>                   | Tng Meng Kiat John | Nanyang Technological University (NTU) |
+| <a href='https://github.com/kiatCodes' title='kiatCodes'> <img src='https://github.com/kiatCodes.png' height='50' width='50'/></a>                   | Tng Meng Kiat | Nanyang Technological University (NTU) |
 
