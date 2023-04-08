@@ -23,8 +23,8 @@
 - Run 'flutter build apk --release' in the terminal (VS Code)
 - Install apk into test device
 
-Test device used:
-OS:
+- Test device used:
+- OS:
 
 
 ## Technologies
