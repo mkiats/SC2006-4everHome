@@ -13,6 +13,18 @@
 4EverHome connects users to external agents such as realtors and interior designers, which are often difficult and time-consuming to source. Through the usage of this app, users can choose which services they can engage with during the purchase of their property.
 
 
+## Setup Instructions
+
+- Download VSCode, ensure dart and flutter extensions are downloaded
+- Download android studio and android toolchain
+- Download flutterSdk and add to variable environmental paths
+- Run the flutter code and load 'flutter build apk --release'
+- Install apk into test device
+
+Test device used:
+OS:
+
+
 ## Technologies
 
 Project is created with:
