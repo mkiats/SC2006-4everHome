@@ -7,7 +7,10 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 import 'l_summary_project_model.dart';
 export 'l_summary_project_model.dart';
@@ -190,13 +193,13 @@ class _LSummaryProjectWidgetState extends State<LSummaryProjectWidget> {
                                                       FlutterFlowExpandedImageView(
                                                     image: CachedNetworkImage(
                                                       imageUrl:
-                                                          listingSummaryColumnListingRecord
+                                                          listingSummaryColumnListingRecord!
                                                               .listingImg!,
                                                       fit: BoxFit.contain,
                                                     ),
                                                     allowRotation: false,
                                                     tag:
-                                                        listingSummaryColumnListingRecord
+                                                        listingSummaryColumnListingRecord!
                                                             .listingImg!,
                                                     useHeroAnimation: true,
                                                   ),
@@ -205,7 +208,7 @@ class _LSummaryProjectWidgetState extends State<LSummaryProjectWidget> {
                                             },
                                             child: Hero(
                                               tag:
-                                                  listingSummaryColumnListingRecord
+                                                  listingSummaryColumnListingRecord!
                                                       .listingImg!,
                                               transitionOnUserGestures: true,
                                               child: ClipRRect(
@@ -213,7 +216,7 @@ class _LSummaryProjectWidgetState extends State<LSummaryProjectWidget> {
                                                     BorderRadius.circular(16.0),
                                                 child: CachedNetworkImage(
                                                   imageUrl:
-                                                      listingSummaryColumnListingRecord
+                                                      listingSummaryColumnListingRecord!
                                                           .listingImg!,
                                                   width: double.infinity,
                                                   height: double.infinity,
@@ -238,7 +241,7 @@ class _LSummaryProjectWidgetState extends State<LSummaryProjectWidget> {
                                           CrossAxisAlignment.start,
                                       children: [
                                         Text(
-                                          listingSummaryColumnListingRecord
+                                          listingSummaryColumnListingRecord!
                                               .listingLocation.addressName!,
                                           style: FlutterFlowTheme.of(context)
                                               .bodySmall
@@ -252,7 +255,7 @@ class _LSummaryProjectWidgetState extends State<LSummaryProjectWidget> {
                                               ),
                                         ),
                                         Text(
-                                          listingSummaryColumnListingRecord
+                                          listingSummaryColumnListingRecord!
                                               .listingLocation.postalCode!,
                                           textAlign: TextAlign.start,
                                           style: FlutterFlowTheme.of(context)
@@ -313,7 +316,7 @@ class _LSummaryProjectWidgetState extends State<LSummaryProjectWidget> {
                                                   ),
                                             ),
                                             Text(
-                                              listingSummaryColumnListingRecord
+                                              listingSummaryColumnListingRecord!
                                                   .listingType!,
                                               style:
                                                   FlutterFlowTheme.of(context)
@@ -344,7 +347,7 @@ class _LSummaryProjectWidgetState extends State<LSummaryProjectWidget> {
                                                   ),
                                             ),
                                             Text(
-                                              listingSummaryColumnListingRecord
+                                              listingSummaryColumnListingRecord!
                                                   .listingFloorNumber!,
                                               style:
                                                   FlutterFlowTheme.of(context)
@@ -375,7 +378,7 @@ class _LSummaryProjectWidgetState extends State<LSummaryProjectWidget> {
                                                   ),
                                             ),
                                             Text(
-                                              listingSummaryColumnListingRecord
+                                              listingSummaryColumnListingRecord!
                                                   .listingUnitNumber!,
                                               style:
                                                   FlutterFlowTheme.of(context)
@@ -406,7 +409,7 @@ class _LSummaryProjectWidgetState extends State<LSummaryProjectWidget> {
                                                   ),
                                             ),
                                             Text(
-                                              listingSummaryColumnListingRecord
+                                              listingSummaryColumnListingRecord!
                                                   .leaseDuration!
                                                   .toString(),
                                               style:
@@ -438,7 +441,7 @@ class _LSummaryProjectWidgetState extends State<LSummaryProjectWidget> {
                                                   ),
                                             ),
                                             Text(
-                                              listingSummaryColumnListingRecord
+                                              listingSummaryColumnListingRecord!
                                                   .waitingTimeInMonths!
                                                   .toString(),
                                               style:
@@ -614,7 +617,7 @@ class _LSummaryProjectWidgetState extends State<LSummaryProjectWidget> {
                                                       ),
                                                 ),
                                                 Text(
-                                                  loanAgentColumnLoanAgentRecord
+                                                  loanAgentColumnLoanAgentRecord!
                                                       .company!,
                                                   style: FlutterFlowTheme.of(
                                                           context)
@@ -727,7 +730,7 @@ class _LSummaryProjectWidgetState extends State<LSummaryProjectWidget> {
                                                       ),
                                                 ),
                                                 Text(
-                                                  loanColumnLoanRecord
+                                                  loanColumnLoanRecord!
                                                       .loanPeriodInMonths!
                                                       .toString(),
                                                   style: FlutterFlowTheme.of(
@@ -852,7 +855,7 @@ class _LSummaryProjectWidgetState extends State<LSummaryProjectWidget> {
                                               ),
                                         ),
                                         Text(
-                                          realtorSummaryColumnRealtorAgentRecord
+                                          realtorSummaryColumnRealtorAgentRecord!
                                               .company!,
                                           style: FlutterFlowTheme.of(context)
                                               .titleSmall,
@@ -971,7 +974,7 @@ class _LSummaryProjectWidgetState extends State<LSummaryProjectWidget> {
                                               ),
                                         ),
                                         Text(
-                                          iDSummaryColumnInteriorDesignerRecord
+                                          iDSummaryColumnInteriorDesignerRecord!
                                               .company!,
                                           style: FlutterFlowTheme.of(context)
                                               .titleSmall,

@@ -5,6 +5,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'a_login_page_project_model.dart';
 export 'a_login_page_project_model.dart';
@@ -44,16 +45,16 @@ class _ALoginPageProjectWidgetState extends State<ALoginPageProjectWidget> {
 
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).gunmetal,
+      backgroundColor: FlutterFlowTheme.of(context).secondary,
       body: Container(
         width: MediaQuery.of(context).size.width * 1.0,
-        height: MediaQuery.of(context).size.height * 1.0,
+        height: MediaQuery.of(context).size.height * 0.9,
         decoration: BoxDecoration(
-          color: FlutterFlowTheme.of(context).gunmetal,
+          color: FlutterFlowTheme.of(context).secondary,
         ),
         child: SingleChildScrollView(
           child: Column(
-            mainAxisSize: MainAxisSize.max,
+            mainAxisSize: MainAxisSize.min,
             children: [
               Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
@@ -61,14 +62,7 @@ class _ALoginPageProjectWidgetState extends State<ALoginPageProjectWidget> {
                   width: double.infinity,
                   height: MediaQuery.of(context).size.height * 0.98,
                   decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).secondaryBackground,
-                    boxShadow: [
-                      BoxShadow(
-                        blurRadius: 7.0,
-                        color: Color(0x4D090F13),
-                        offset: Offset(0.0, 3.0),
-                      )
-                    ],
+                    color: FlutterFlowTheme.of(context).secondary,
                     borderRadius: BorderRadius.circular(16.0),
                   ),
                   child: Padding(

@@ -9,6 +9,24 @@
           "order": "ASCENDING"
         },
         {
+          "fieldPath": "region",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "propertyPrice",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Listing",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "listingType",
+          "order": "ASCENDING"
+        },
+        {
           "fieldPath": "listingAvailble",
           "order": "ASCENDING"
         },

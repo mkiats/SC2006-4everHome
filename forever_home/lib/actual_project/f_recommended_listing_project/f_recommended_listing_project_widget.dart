@@ -7,6 +7,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'f_recommended_listing_project_model.dart';
 export 'f_recommended_listing_project_model.dart';
@@ -86,7 +87,7 @@ class _FRecommendedListingProjectWidgetState
         return Scaffold(
           key: scaffoldKey,
           resizeToAvoidBottomInset: false,
-          backgroundColor: FlutterFlowTheme.of(context).gunmetal,
+          backgroundColor: FlutterFlowTheme.of(context).secondary,
           appBar: PreferredSize(
             preferredSize:
                 Size.fromHeight(MediaQuery.of(context).size.height * 0.07),
@@ -122,11 +123,11 @@ class _FRecommendedListingProjectWidgetState
             ),
           ),
           body: Column(
-            mainAxisSize: MainAxisSize.min,
+            mainAxisSize: MainAxisSize.max,
             children: [
               Container(
                 width: double.infinity,
-                height: MediaQuery.of(context).size.height * 0.93,
+                height: MediaQuery.of(context).size.height * 0.8,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).primary,
                 ),
@@ -221,7 +222,7 @@ class _FRecommendedListingProjectWidgetState
                                               alignment: AlignmentDirectional(
                                                   0.0, 1.0),
                                               child: Text(
-                                                displayListingListingRecord
+                                                displayListingListingRecord!
                                                     .listingName!,
                                                 style:
                                                     FlutterFlowTheme.of(context)
@@ -239,7 +240,7 @@ class _FRecommendedListingProjectWidgetState
                                               alignment: AlignmentDirectional(
                                                   0.0, -1.0),
                                               child: Text(
-                                                displayListingListingRecord
+                                                displayListingListingRecord!
                                                     .region!,
                                                 style:
                                                     FlutterFlowTheme.of(context)
@@ -268,7 +269,7 @@ class _FRecommendedListingProjectWidgetState
                                                 builder: (context) =>
                                                     GSelectListingProjectWidget(
                                                   latlongToDisplay:
-                                                      displayListingListingRecord
+                                                      displayListingListingRecord!
                                                           .listingLocation
                                                           .latlong,
                                                 ),

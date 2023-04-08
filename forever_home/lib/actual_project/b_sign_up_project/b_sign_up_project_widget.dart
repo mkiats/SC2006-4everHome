@@ -6,7 +6,9 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/custom_functions.dart' as functions;
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'b_sign_up_project_model.dart';
 export 'b_sign_up_project_model.dart';
@@ -47,7 +49,7 @@ class _BSignUpProjectWidgetState extends State<BSignUpProjectWidget> {
 
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).primary,
+      backgroundColor: FlutterFlowTheme.of(context).secondary,
       appBar: PreferredSize(
         preferredSize:
             Size.fromHeight(MediaQuery.of(context).size.height * 0.07),
@@ -89,7 +91,7 @@ class _BSignUpProjectWidgetState extends State<BSignUpProjectWidget> {
             padding: EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
             child: Container(
               width: MediaQuery.of(context).size.width * 1.0,
-              height: MediaQuery.of(context).size.height * 0.91,
+              height: MediaQuery.of(context).size.height * 0.83,
               decoration: BoxDecoration(
                 color: FlutterFlowTheme.of(context).secondaryBackground,
                 boxShadow: [
@@ -514,7 +516,7 @@ class _BSignUpProjectWidgetState extends State<BSignUpProjectWidget> {
                                             _model.displayNameController.text,
                                         uid: functions
                                             .listingApplicationIncrement(
-                                                buttonResigsterInitialisationCounterRecord
+                                                buttonResigsterInitialisationCounterRecord!
                                                     .user!)
                                             .toString(),
                                         accountType: 'User',
@@ -537,7 +539,7 @@ class _BSignUpProjectWidgetState extends State<BSignUpProjectWidget> {
                                           FieldValue.increment(1),
                                       'User': FieldValue.increment(1),
                                     };
-                                    await buttonResigsterInitialisationCounterRecord
+                                    await buttonResigsterInitialisationCounterRecord!
                                         .reference
                                         .update(
                                             initialisationCounterUpdateData);

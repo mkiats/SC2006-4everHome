@@ -7,9 +7,12 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:text_search/text_search.dart';
 import 'j2_realtor_app_project_model.dart';
@@ -390,11 +393,11 @@ class _J2RealtorAppProjectWidgetState extends State<J2RealtorAppProjectWidget>
                                                 isDismissible: false,
                                                 enableDrag: false,
                                                 context: context,
-                                                builder: (context) {
+                                                builder: (bottomSheetContext) {
                                                   return Padding(
-                                                    padding:
-                                                        MediaQuery.of(context)
-                                                            .viewInsets,
+                                                    padding: MediaQuery.of(
+                                                            bottomSheetContext)
+                                                        .viewInsets,
                                                     child: Container(
                                                       height:
                                                           MediaQuery.of(context)
@@ -652,11 +655,11 @@ class _J2RealtorAppProjectWidgetState extends State<J2RealtorAppProjectWidget>
                                                 isDismissible: false,
                                                 enableDrag: false,
                                                 context: context,
-                                                builder: (context) {
+                                                builder: (bottomSheetContext) {
                                                   return Padding(
-                                                    padding:
-                                                        MediaQuery.of(context)
-                                                            .viewInsets,
+                                                    padding: MediaQuery.of(
+                                                            bottomSheetContext)
+                                                        .viewInsets,
                                                     child: Container(
                                                       height:
                                                           MediaQuery.of(context)
