@@ -1,6 +1,8 @@
 # 4everHome
 
-SC2006 Software Engineering Project
+# SC2006 Software Engineering Project
+
+## Project Description
 
 4EverHome is a mobile application which seeks to assist users in the purchase of properties in Singapore. The mobile app aims to seamlessly bridge the gap between different parties such as consumers, realtors, financial institutions and interior designers to facilitate the purchase of a property.
 
@@ -26,4 +28,7 @@ Project is created with:
 | ------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | -------------------------------------- |
 | <a href='https://github.com/jklye' title='jklye'> <img src='https://github.com/jklye.png' height='50' width='50'/></a> | Lye Jin Kai       | Nanyang Technological University (NTU) |
 | <a href='https://github.com/kiatCodes' title='kiatCodes'> <img src='https://github.com/kiatCodes.png' height='50' width='50'/></a>                   | Tng Meng Kiat | Nanyang Technological University (NTU) |
+| <a href='https://github.com/jialatsin' title='jialatsin'> <img src='https://github.com/jialatsin.png' height='50' width='50'/></a>                   | Gerald Sin | Nanyang Technological University (NTU) |
+| <a href='https://github.com/SamsonOngqx' title='SamsonOngqx'> <img src='https://github.com/SamsonOngqx.png' height='50' width='50'/></a>                   | Ong Qi Xuan Samson | Nanyang Technological University (NTU) |
+| <a href='https://github.com/chenyi1491' title='chenyi1491'> <img src='https://github.com/chenyi1491.png' height='50' width='50'/></a>                   | Chen Yi | Nanyang Technological University (NTU) |
 
