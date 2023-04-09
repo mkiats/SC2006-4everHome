@@ -18,6 +18,7 @@ SC2006 Software Engineering Project
 
 ## Key Features
 1. User Authentication
+Existing users will be able to login using their registered email address and password. New users can sign up an account using the register page.
   <table>
   <tr>
     <td align="center">Login Page</td>
@@ -29,6 +30,26 @@ SC2006 Software Engineering Project
   </tr>
  </table>
 
+2. Search for available listings
+<table>
+  <tr>
+    <td align="center">Login Page</td>
+    <td align="center">Register Page</td>
+  </tr>
+  <tr>
+    <td align="center"><img width=50% height=auto src="https://user-images.githubusercontent.com/77598625/230762699-03324234-a95f-41e9-b258-47fa49b0ce24.png"></td>
+    <td align="center"><img width=50% height=auto src="https://user-images.githubusercontent.com/77598625/230762742-2499b511-2c56-419b-9f70-147ace3443f0.png"></td>
+  </tr>
+ </table>
+
+
+3. View details for a selected listing
+
+
+4. Liaise with external agents
+
+
+5. Send email confirmation
 
 
 
