@@ -83,7 +83,7 @@ SC2006 Software Engineering Project
 <br>
 
 5. Send email confirmation
-- Users can subsequently view a summary of their applications and send a confirmation email to themselves
+- Users can subsequently view a summary of their applications and send a confirmation email to themselves.
 <table align="center">
   <tr>
     <td align="center">Summary</td>
