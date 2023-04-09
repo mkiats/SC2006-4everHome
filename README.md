@@ -123,13 +123,13 @@ Project is created with:
 - Run 'flutter build apk --split-per-abi' in the VS Code terminal
 - Locate APK files under forever_home/build/app/outputs
 - Install APK into android test devices
+- Note that a stable internet connection is required to run the mobile application.
 <br>
 
 Test device used:
 - Operating System: Android 
 - Version: Android 11 Red Velvet Cake
 - Model: Samsung Galaxy S10+
-- Stable internet connection is required.
 <br>
 
 ## Contributors
