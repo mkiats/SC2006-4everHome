@@ -91,7 +91,7 @@ SC2006 Software Engineering Project
     <td align="center">Summary</td>
   </tr>
   <tr>
-    <td align="center"><img width=20% height=20% src="https://user-images.githubusercontent.com/77598625/230764893-212b4021-c651-4ae5-ae95-cc45b497b8ce.png"></td>
+    <td align="center"><img width=223px height=467px src="https://user-images.githubusercontent.com/77598625/230764893-212b4021-c651-4ae5-ae95-cc45b497b8ce.png"></td>
   </tr>
  </table>
 <br>
