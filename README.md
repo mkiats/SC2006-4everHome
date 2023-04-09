@@ -19,6 +19,7 @@ SC2006 Software Engineering Project
 ## Key Features
 1. User Authentication
 - Existing users will be able to login using their registered email address and password. New users can sign up an account using the register page.
+ 
  <table>
   <tr>
     <td align="center">Login Page</td>
@@ -30,8 +31,11 @@ SC2006 Software Engineering Project
   </tr>
  </table>
 
+
 2. Search for available listings
-<table>
+- Users can choose to either search for listings by text search or by filters.
+ 
+ <table>
   <tr>
     <td align="center">Search Listing by Name Page</td>
     <td align="center">Search Listing by Filters Page</td>
@@ -44,6 +48,20 @@ SC2006 Software Engineering Project
 
 
 3. View details for a selected listing
+- After selecting a particular listing on the google map, users can find out more about it.
+ 
+ <table>
+  <tr>
+    <td align="center">Recommended Listings Page</td>
+    <td align="center">Selected Listing Page</td>
+  </tr>
+  <tr>
+    <td align="center"><img width=50% height=auto src="https://user-images.githubusercontent.com/77598625/230763357-d48309b9-9808-4220-b97f-aaf2ac4d0bf0.png"></td>
+    <td align="center"><img width=50% height=auto src="https://user-images.githubusercontent.com/77598625/230763452-4dbe51c3-fad7-4836-b1bc-987fcb9a00ca.png"></td>
+  </tr>
+ </table>
+
+
 
 
 4. Liaise with external agents
