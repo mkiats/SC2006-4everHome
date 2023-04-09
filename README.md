@@ -63,7 +63,7 @@ SC2006 Software Engineering Project
     <td align="center"><img src="https://user-images.githubusercontent.com/77598625/230764309-59ef1ca4-106b-4dea-b0dc-df3a6a471f8f.png"></td>
   </tr>
  </table>
-
+<br>
 
 4. Liaise with external agents
 - After confirming the purchase of a listing, the user can connect with loan agents, realtors and interior designers for their relevant services.
@@ -80,10 +80,19 @@ SC2006 Software Engineering Project
     <td align="center"><img src="https://user-images.githubusercontent.com/77598625/230764568-2db35e58-0059-4873-8fff-711eff0d94f4.png"></td>
   </tr>
  </table>
-
+<br>
 
 5. Send email confirmation
-
+- Users can subsequently view a summary of their applications and send a confirmation email to themselves
+<table>
+  <tr>
+    <td align="center">Summary</td>
+  </tr>
+  <tr>
+    <td align="center"><img width=50% height=auto src="https://user-images.githubusercontent.com/77598625/230764893-212b4021-c651-4ae5-ae95-cc45b497b8ce.png"></td>
+  </tr>
+ </table>
+<br>
 
 
 
@@ -96,7 +105,7 @@ Project is created with:
 - [Dart](https://dart.dev/get-dart)
 - [Google Place API](https://developers.google.com/maps/documentation/places/web-service)
 - [SendGrid Email API](https://sendgrid.com/solutions/email-api/)
-
+<br>
 
 ## Setup Instructions
 
@@ -112,14 +121,14 @@ Project is created with:
 - Run 'flutter build apk --split-per-abi' in the VS Code terminal
 - Locate APK files under forever_home/build/app/outputs
 - Install APK into android test devices
-
+<br>
 
 Test device used:
 - Operating System: Android 
 - Version: Android 11 Red Velvet Cake
 - Model: Samsung Galaxy S10+
 - Stable internet connection is required.
-
+<br>
 
 ## Contributors
 
