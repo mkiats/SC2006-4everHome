@@ -1,6 +1,5 @@
 # 4everHome
 SC2006 Software Engineering Project
-<br>
 
 ## Project Description
 <p align="justify"> 
