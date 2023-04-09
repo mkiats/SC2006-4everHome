@@ -57,10 +57,10 @@ SC2006 Software Engineering Project
     <td align="center">View Loan Estimation</td>
   </tr>
   <tr>
-    <td align="center"><img width=50% height=auto src="https://user-images.githubusercontent.com/77598625/230763783-f04410ac-6177-43b8-a9b5-860e3a2c2394.png"></td>
-    <td align="center"><img width=50% height=auto src="https://user-images.githubusercontent.com/77598625/230763813-545d0896-4cc6-40dd-a336-20c9015f6e76.png"></td>
-    <td align="center"><img width=50% height=auto src="https://user-images.githubusercontent.com/77598625/230763828-21fa46d0-6d8d-44b4-9c8c-4ddea8e83748.png"></td>
-    <td align="center"><img width=50% height=auto src="https://user-images.githubusercontent.com/77598625/230764309-59ef1ca4-106b-4dea-b0dc-df3a6a471f8f.png"></td>
+    <td align="center"><img width=70% height=auto src="https://user-images.githubusercontent.com/77598625/230763783-f04410ac-6177-43b8-a9b5-860e3a2c2394.png"></td>
+    <td align="center"><img width=70% height=auto src="https://user-images.githubusercontent.com/77598625/230763813-545d0896-4cc6-40dd-a336-20c9015f6e76.png"></td>
+    <td align="center"><img width=70% height=auto src="https://user-images.githubusercontent.com/77598625/230763828-21fa46d0-6d8d-44b4-9c8c-4ddea8e83748.png"></td>
+    <td align="center"><img width=70% height=auto src="https://user-images.githubusercontent.com/77598625/230764309-59ef1ca4-106b-4dea-b0dc-df3a6a471f8f.png"></td>
   </tr>
  </table>
 
