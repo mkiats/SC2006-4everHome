@@ -42,8 +42,10 @@ Project is created with:
 - Install APK into android test devices
 
 Test device used:
-- OS:
-- Model:
+- Operating System: Android 
+- Version: Android 11 Red Velvet Cake
+- Model: Samsung Galaxy S10+
+- Stable internet connection is required.
 
 
 ## Contributors
