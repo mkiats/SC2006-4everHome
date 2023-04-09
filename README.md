@@ -41,6 +41,7 @@ Project is created with:
 - Locate APK files under forever_home/build/app/outputs
 - Install APK into android test devices
 
+
 Test device used:
 - Operating System: Android 
 - Version: Android 11 Red Velvet Cake
