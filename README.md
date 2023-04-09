@@ -33,12 +33,12 @@ SC2006 Software Engineering Project
 2. Search for available listings
 <table>
   <tr>
-    <td align="center">Login Page</td>
-    <td align="center">Register Page</td>
+    <td align="center">Search Listing by Name Page</td>
+    <td align="center">Search Listing by Filters Page</td>
   </tr>
   <tr>
-    <td align="center"><img width=50% height=auto src="https://user-images.githubusercontent.com/77598625/230762699-03324234-a95f-41e9-b258-47fa49b0ce24.png"></td>
-    <td align="center"><img width=50% height=auto src="https://user-images.githubusercontent.com/77598625/230762742-2499b511-2c56-419b-9f70-147ace3443f0.png"></td>
+    <td align="center"><img width=50% height=auto src="https://user-images.githubusercontent.com/77598625/230763257-043c2852-f6a0-40f0-a558-eb189f867af3.png"></td>
+    <td align="center"><img width=50% height=auto src="https://user-images.githubusercontent.com/77598625/230763322-3cc3c557-247a-458b-8b67-9c2cd31505da.png"></td>
   </tr>
  </table>
 
