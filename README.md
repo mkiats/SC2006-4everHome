@@ -103,7 +103,7 @@ SC2006 Software Engineering Project
 Project is created with:
 
 - [Flutter](https://docs.flutter.dev/get-started/install)
-- [Firebase](https://firebase.google.com/)
+- [Cloud Firestore](https://firebase.google.com/docs/firestore)
 - [Dart](https://dart.dev/get-dart)
 - [Google Place API](https://developers.google.com/maps/documentation/places/web-service)
 - [SendGrid Email API](https://sendgrid.com/solutions/email-api/)
