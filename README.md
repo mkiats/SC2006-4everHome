@@ -23,8 +23,8 @@ SC2006 Software Engineering Project
     <td align="center">Register</td>
   </tr>
   <tr>
-    <td align="center"><img width=210px height=410px src="https://user-images.githubusercontent.com/77598625/230762699-03324234-a95f-41e9-b258-47fa49b0ce24.png"></td>
-    <td align="center"><img width=210px height=410px src="https://user-images.githubusercontent.com/77598625/230762742-2499b511-2c56-419b-9f70-147ace3443f0.png"></td>
+    <td align="center"><img max-width=210px max-height=410px src="https://user-images.githubusercontent.com/77598625/230762699-03324234-a95f-41e9-b258-47fa49b0ce24.png"></td>
+    <td align="center"><img max-width=210px max-height=410px src="https://user-images.githubusercontent.com/77598625/230762742-2499b511-2c56-419b-9f70-147ace3443f0.png"></td>
   </tr>
  </table>
 <br>
@@ -40,10 +40,10 @@ SC2006 Software Engineering Project
     <td align="center">Select Listing</td>
   </tr>
   <tr>
-    <td align="center"><img width=223px height=437px src="https://user-images.githubusercontent.com/77598625/230763257-043c2852-f6a0-40f0-a558-eb189f867af3.png"></td>
-    <td align="center"><img width=223px height=437px src="https://user-images.githubusercontent.com/77598625/230763322-3cc3c557-247a-458b-8b67-9c2cd31505da.png"></td>
-    <td align="center"><img width=223px height=437px src="https://user-images.githubusercontent.com/77598625/230763357-d48309b9-9808-4220-b97f-aaf2ac4d0bf0.png"></td>
-    <td align="center"><img width=223px height=437px src="https://user-images.githubusercontent.com/77598625/230765537-44a0d379-c635-43a1-9769-5172be99f775.png"></td>
+    <td align="center"><img max-width=210px max-height=410px src="https://user-images.githubusercontent.com/77598625/230763257-043c2852-f6a0-40f0-a558-eb189f867af3.png"></td>
+    <td align="center"><img max-width=210px max-height=410px src="https://user-images.githubusercontent.com/77598625/230763322-3cc3c557-247a-458b-8b67-9c2cd31505da.png"></td>
+    <td align="center"><img max-width=210px max-height=410px src="https://user-images.githubusercontent.com/77598625/230763357-d48309b9-9808-4220-b97f-aaf2ac4d0bf0.png"></td>
+    <td align="center"><img max-width=210px max-height=410px src="https://user-images.githubusercontent.com/77598625/230765537-44a0d379-c635-43a1-9769-5172be99f775.png"></td>
   </tr>
  </table>
 <br>
