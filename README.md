@@ -23,8 +23,8 @@ SC2006 Software Engineering Project
     <td align="center">Register</td>
   </tr>
   <tr>
-    <td align="center"><img width=40% height=auto src="https://user-images.githubusercontent.com/77598625/230762699-03324234-a95f-41e9-b258-47fa49b0ce24.png"></td>
-    <td align="center"><img width=40% height=auto src="https://user-images.githubusercontent.com/77598625/230762742-2499b511-2c56-419b-9f70-147ace3443f0.png"></td>
+    <td align="center"><img width=210px height=410px src="https://user-images.githubusercontent.com/77598625/230762699-03324234-a95f-41e9-b258-47fa49b0ce24.png"></td>
+    <td align="center"><img width=210px height=410px src="https://user-images.githubusercontent.com/77598625/230762742-2499b511-2c56-419b-9f70-147ace3443f0.png"></td>
   </tr>
  </table>
 <br>
@@ -49,7 +49,7 @@ SC2006 Software Engineering Project
 3. View details for a selected listing
 - After selecting a particular listing on the google map, users can find out more about it.
  
- <table>
+ <table align="center">
   <tr>
     <td align="center">View Nearby Amenities</td>
     <td align="center">View Budget Estimation</td>
@@ -68,16 +68,16 @@ SC2006 Software Engineering Project
 4. Liaise with external agents
 - After confirming the purchase of a listing, the user can connect with loan agents, realtors and interior designers for their relevant services.
 
-<table>
+<table align="center">
   <tr>
     <td align="center">Loan Application</td>
     <td align="center">Realtor Application</td>
     <td align="center">Interior Designer Application</td>
   </tr>
   <tr>
-    <td align="center"><img src="https://user-images.githubusercontent.com/77598625/230764540-e92ca871-7d69-441b-8e11-c90fd50e804d.png"></td>
-    <td align="center"><img src="https://user-images.githubusercontent.com/77598625/230764545-beed576b-e32a-45ad-9549-3fc611291dc5.png"></td>
-    <td align="center"><img src="https://user-images.githubusercontent.com/77598625/230764568-2db35e58-0059-4873-8fff-711eff0d94f4.png"></td>
+    <td align="center"><img width=210px height=410px src="https://user-images.githubusercontent.com/77598625/230764540-e92ca871-7d69-441b-8e11-c90fd50e804d.png"></td>
+    <td align="center"><img width=210px height=410px src="https://user-images.githubusercontent.com/77598625/230764545-beed576b-e32a-45ad-9549-3fc611291dc5.png"></td>
+    <td align="center"><img width=210px height=410px src="https://user-images.githubusercontent.com/77598625/230764568-2db35e58-0059-4873-8fff-711eff0d94f4.png"></td>
   </tr>
  </table>
 <br>
@@ -89,7 +89,7 @@ SC2006 Software Engineering Project
     <td align="center">Summary</td>
   </tr>
   <tr>
-    <td align="center"><img width=30% height=auto src="https://user-images.githubusercontent.com/77598625/230764893-212b4021-c651-4ae5-ae95-cc45b497b8ce.png"></td>
+    <td align="center"><img width=210px height=410px src="https://user-images.githubusercontent.com/77598625/230764893-212b4021-c651-4ae5-ae95-cc45b497b8ce.png"></td>
   </tr>
  </table>
 <br>
