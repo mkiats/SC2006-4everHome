@@ -18,7 +18,7 @@ SC2006 Software Engineering Project
 
 ## Key Features
 1. User Authentication
-Existing users will be able to login using their registered email address and password. New users can sign up an account using the register page.
+- Existing users will be able to login using their registered email address and password. New users can sign up an account using the register page.
   <table>
   <tr>
     <td align="center">Login Page</td>
