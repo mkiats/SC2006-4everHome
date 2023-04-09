@@ -19,8 +19,8 @@ SC2006 Software Engineering Project
  
  <table>
   <tr>
-    <td align="center">Login Page</td>
-    <td align="center">Register Page</td>
+    <td align="center">Login</td>
+    <td align="center">Register</td>
   </tr>
   <tr>
     <td align="center"><img width=50% height=auto src="https://user-images.githubusercontent.com/77598625/230762699-03324234-a95f-41e9-b258-47fa49b0ce24.png"></td>
@@ -34,9 +34,9 @@ SC2006 Software Engineering Project
  
  <table>
   <tr>
-    <td align="center">Search Listing by Name Page</td>
-    <td align="center">Search Listing by Filters Page</td>
-    <td align="center">Recommended Listings Page</td>
+    <td align="center">Search Listing by Name</td>
+    <td align="center">Search Listing by Filters</td>
+    <td align="center">Recommended Listings</td>
   </tr>
   <tr>
     <td align="center"><img width=50% height=auto src="https://user-images.githubusercontent.com/77598625/230763257-043c2852-f6a0-40f0-a558-eb189f867af3.png"></td>
@@ -51,17 +51,18 @@ SC2006 Software Engineering Project
  
  <table>
   <tr>
-    <td align="center">Recommended Listings Page</td>
-    <td align="center">Selected Listing Page</td>
-    <td align="center">Selected Listing Page</td>
+    <td align="center">View Nearby Amenities</td>
+    <td align="center">View Budget Estimation</td>
+    <td align="center">Loan Calculation</td>
+    <td align="center">View Loan Estimation</td>
   </tr>
   <tr>
-    <td align="center"><img width=50% height=auto src="https://user-images.githubusercontent.com/77598625/230763357-d48309b9-9808-4220-b97f-aaf2ac4d0bf0.png"></td>
-    <td align="center"><img width=50% height=auto src="https://user-images.githubusercontent.com/77598625/230763452-4dbe51c3-fad7-4836-b1bc-987fcb9a00ca.png"></td>
+    <td align="center"><img width=50% height=auto src="https://user-images.githubusercontent.com/77598625/230763783-f04410ac-6177-43b8-a9b5-860e3a2c2394.png"></td>
+    <td align="center"><img width=50% height=auto src="https://user-images.githubusercontent.com/77598625/230763813-545d0896-4cc6-40dd-a336-20c9015f6e76.png"></td>
+    <td align="center"><img width=50% height=auto src="https://user-images.githubusercontent.com/77598625/230763828-21fa46d0-6d8d-44b4-9c8c-4ddea8e83748.png"></td>
+    <td align="center"><img width=50% height=auto src="https://user-images.githubusercontent.com/77598625/230764309-59ef1ca4-106b-4dea-b0dc-df3a6a471f8f.png"></td>
   </tr>
  </table>
-
-
 
 
 4. Liaise with external agents
