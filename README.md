@@ -17,12 +17,12 @@ SC2006 Software Engineering Project
 1. User Authentication
 - Existing users will be able to login using their registered email address and password. New users can sign up an account using the register page.
  
- <table>
-  <tr align="center">
+ <table align="center">
+  <tr>
     <td align="center">Login</td>
     <td align="center">Register</td>
   </tr>
-  <tr align="center">
+  <tr>
     <td align="center"><img width=40% height=auto src="https://user-images.githubusercontent.com/77598625/230762699-03324234-a95f-41e9-b258-47fa49b0ce24.png"></td>
     <td align="center"><img width=40% height=auto src="https://user-images.githubusercontent.com/77598625/230762742-2499b511-2c56-419b-9f70-147ace3443f0.png"></td>
   </tr>
@@ -32,13 +32,13 @@ SC2006 Software Engineering Project
 2. Search for available listings
 - Users can choose to either search for listings by text search or by filters.
  
- <table>
-  <tr align="center">
+ <table align="center">
+  <tr>
     <td align="center">Search Listing by Name</td>
     <td align="center">Search Listing by Filters</td>
     <td align="center">Recommended Listings</td>
   </tr>
-  <tr align="center">
+  <tr>
     <td align="center"><img width=210px height=410px src="https://user-images.githubusercontent.com/77598625/230763257-043c2852-f6a0-40f0-a558-eb189f867af3.png"></td>
     <td align="center"><img width=210px height=410px src="https://user-images.githubusercontent.com/77598625/230763322-3cc3c557-247a-458b-8b67-9c2cd31505da.png"></td>
     <td align="center"><img width=210px height=410px src="https://user-images.githubusercontent.com/77598625/230763357-d48309b9-9808-4220-b97f-aaf2ac4d0bf0.png"></td>
