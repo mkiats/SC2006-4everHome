@@ -24,7 +24,7 @@ SC2006 Software Engineering Project
      <td>Register Page</td>
   </tr>
   <tr>
-    <td valign="top"><img src="https://user-images.githubusercontent.com/77598625/230762699-03324234-a95f-41e9-b258-47fa49b0ce24.png"></td>
+    <td valign="top"><img width=50% height=auto src="https://user-images.githubusercontent.com/77598625/230762699-03324234-a95f-41e9-b258-47fa49b0ce24.png"></td>
     <td valign="top"><img src="https://user-images.githubusercontent.com/77598625/230762742-2499b511-2c56-419b-9f70-147ace3443f0.png"></td>
   </tr>
  </table>
