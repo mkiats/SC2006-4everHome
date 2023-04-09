@@ -39,9 +39,9 @@ SC2006 Software Engineering Project
     <td align="center">Recommended Listings Page</td>
   </tr>
   <tr>
-    <td align="center"><img width=50% height=auto src="https://user-images.githubusercontent.com/77598625/230763257-043c2852-f6a0-40f0-a558-eb189f867af3.png"></td>
-    <td align="center"><img width=50% height=auto src="https://user-images.githubusercontent.com/77598625/230763322-3cc3c557-247a-458b-8b67-9c2cd31505da.png"></td>
-    <td align="center"><img width=50% height=auto src="https://user-images.githubusercontent.com/77598625/230763357-d48309b9-9808-4220-b97f-aaf2ac4d0bf0.png"></td>
+    <td align="center"><img width=60% height=auto src="https://user-images.githubusercontent.com/77598625/230763257-043c2852-f6a0-40f0-a558-eb189f867af3.png"></td>
+    <td align="center"><img width=60% height=auto src="https://user-images.githubusercontent.com/77598625/230763322-3cc3c557-247a-458b-8b67-9c2cd31505da.png"></td>
+    <td align="center"><img width=60% height=auto src="https://user-images.githubusercontent.com/77598625/230763357-d48309b9-9808-4220-b97f-aaf2ac4d0bf0.png"></td>
   </tr>
  </table>
 <br>
