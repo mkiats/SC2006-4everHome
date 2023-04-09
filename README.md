@@ -33,12 +33,12 @@ SC2006 Software Engineering Project
 - Users can choose to either search for listings by text search or by filters.
  
  <table>
-  <tr>
+  <tr align="center">
     <td align="center">Search Listing by Name</td>
     <td align="center">Search Listing by Filters</td>
     <td align="center">Recommended Listings</td>
   </tr>
-  <tr>
+  <tr align="center">
     <td align="center"><img width=210px height=410px src="https://user-images.githubusercontent.com/77598625/230763257-043c2852-f6a0-40f0-a558-eb189f867af3.png"></td>
     <td align="center"><img width=210px height=410px src="https://user-images.githubusercontent.com/77598625/230763322-3cc3c557-247a-458b-8b67-9c2cd31505da.png"></td>
     <td align="center"><img width=210px height=410px src="https://user-images.githubusercontent.com/77598625/230763357-d48309b9-9808-4220-b97f-aaf2ac4d0bf0.png"></td>
