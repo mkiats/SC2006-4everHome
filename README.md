@@ -20,8 +20,8 @@ SC2006 Software Engineering Project
 1. User Authentication
 - Login/Register
   <p align="center">
-    <img width="650" height="350" src='https://user-images.githubusercontent.com/77598625/230762699-03324234-a95f-41e9-b258-47fa49b0ce24.png'>
-    <img width="650" height="350" src='https://user-images.githubusercontent.com/77598625/230762742-2499b511-2c56-419b-9f70-147ace3443f0.png'>
+    <img src='https://user-images.githubusercontent.com/77598625/230762699-03324234-a95f-41e9-b258-47fa49b0ce24.png'>
+    <img src='https://user-images.githubusercontent.com/77598625/230762742-2499b511-2c56-419b-9f70-147ace3443f0.png'>
   </p>
 
 
