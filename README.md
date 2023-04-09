@@ -14,7 +14,7 @@ SC2006 Software Engineering Project
   4EverHome aids users in finding their ideal home by taking into account factors such as types of residence, price range, and preferred location. Users can view suggested properties based on their preferences and make their decision to purchase the property.
   4EverHome connects users to external agents such as loan agents, realtors and interior designers, which are often difficult and time-consuming to source. Through the usage of this app, users can choose which services they can engage with during the purchase of their property. 4everHome aims to bring convenience for the users and provide seamless user experiences for them.
 </p>
-
+<br>
 
 ## Key Features
 1. User Authentication
@@ -30,7 +30,7 @@ SC2006 Software Engineering Project
     <td align="center"><img width=50% height=auto src="https://user-images.githubusercontent.com/77598625/230762742-2499b511-2c56-419b-9f70-147ace3443f0.png"></td>
   </tr>
  </table>
-
+<br>
 
 2. Search for available listings
 - Users can choose to either search for listings by text search or by filters.
@@ -45,7 +45,7 @@ SC2006 Software Engineering Project
     <td align="center"><img width=50% height=auto src="https://user-images.githubusercontent.com/77598625/230763322-3cc3c557-247a-458b-8b67-9c2cd31505da.png"></td>
   </tr>
  </table>
-
+<br>
 
 3. View details for a selected listing
 - After selecting a particular listing on the google map, users can find out more about it.
