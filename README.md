@@ -77,9 +77,9 @@ SC2006 Software Engineering Project
     <td align="center">Interior Designer Application</td>
   </tr>
   <tr>
-    <td align="center"><img width=210px height=410px src="https://user-images.githubusercontent.com/77598625/230764540-e92ca871-7d69-441b-8e11-c90fd50e804d.png"></td>
-    <td align="center"><img width=210px height=410px src="https://user-images.githubusercontent.com/77598625/230764545-beed576b-e32a-45ad-9549-3fc611291dc5.png"></td>
-    <td align="center"><img width=210px height=410px src="https://user-images.githubusercontent.com/77598625/230764568-2db35e58-0059-4873-8fff-711eff0d94f4.png"></td>
+    <td align="center"><img src="https://user-images.githubusercontent.com/77598625/230764540-e92ca871-7d69-441b-8e11-c90fd50e804d.png"></td>
+    <td align="center"><img src="https://user-images.githubusercontent.com/77598625/230764545-beed576b-e32a-45ad-9549-3fc611291dc5.png"></td>
+    <td align="center"><img src="https://user-images.githubusercontent.com/77598625/230764568-2db35e58-0059-4873-8fff-711eff0d94f4.png"></td>
   </tr>
  </table>
 <br>
@@ -91,7 +91,7 @@ SC2006 Software Engineering Project
     <td align="center">Summary</td>
   </tr>
   <tr>
-    <td align="center"><img width=223px height=467px src="https://user-images.githubusercontent.com/77598625/230764893-212b4021-c651-4ae5-ae95-cc45b497b8ce.png"></td>
+    <td align="center"><img src="https://user-images.githubusercontent.com/77598625/230764893-212b4021-c651-4ae5-ae95-cc45b497b8ce.png"></td>
   </tr>
  </table>
 <br>
