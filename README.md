@@ -96,8 +96,6 @@ SC2006 Software Engineering Project
  </table>
 <br>
 
-
-
 ## Technologies
 
 Project is created with:
@@ -124,7 +122,6 @@ Project is created with:
 - Locate APK files under forever_home/build/app/outputs
 - Install APK into android test devices
 - Note that a stable internet connection is required to run the mobile application.
-<br>
 
 Test device used:
 - Operating System: Android 
